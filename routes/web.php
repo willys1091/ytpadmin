@@ -21,32 +21,47 @@ Route::get('dashboard', "MainController@dashboard");
 Route::middleware(['auth'])->group(function () {
     Route::get('dashboard', "MainController@dashboard");
 
-    Route::get('category', "CategoryController@index");
-    Route::get('category/create', "CategoryController@create");
-    Route::post('category' , "CategoryController@store");
-    Route::get('category/{id}/edit' , "CategoryController@edit");
-    Route::Patch('category/{id}' , "CategoryController@update");
+    Route::get('chairity', "ChairityController@index");
+    Route::get('chairity/create', "ChairityController@create");
+    Route::post('chairity' , "ChairityController@store");
+    Route::get('chairity/{id}/edit' , "ChairityController@edit");
+    Route::Patch('chairity/{id}' , "ChairityController@update");
 
-    Route::get('country', "CountryController@index");
-    Route::get('country/create', "CountryController@create");
-    Route::post('country' , "CountryController@store");
-    Route::get('country/{id}/edit' , "CountryController@edit");
-    Route::Patch('country/{id}' , "CountryController@update");
+    Route::get('banner', "ChairitiesController@index");
+    Route::get('banner/create', "ChairitiesController@create");
+    Route::post('banner' , "ChairitiesController@store");
+    Route::get('banner/{id}/edit' , "ChairitiesController@edit");
+    Route::Patch('banner/{id}' , "ChairitiesController@update");
 
-    Route::get('destination', "DestinationController@index");
-    Route::get('destination/create', "DestinationController@create");
-    Route::post('destination' , "DestinationController@store");
-    Route::get('destination/{id}/show' , "DestinationController@show");
-    Route::get('destination/{id}/edit' , "DestinationController@edit");
-    Route::Patch('destination/{id}' , "DestinationController@update");
-    Route::get('destination/{id}/workhours' , "DestinationController@workhours");
+    Route::get('about', "ChairitiesController@index");
+    Route::get('about/create', "ChairitiesController@create");
+    Route::post('about' , "ChairitiesController@store");
+    Route::get('about/{id}/edit' , "ChairitiesController@edit");
+    Route::Patch('about/{id}' , "ChairitiesController@update");
 
-    Route::get('content', "ContentController@index");
-    Route::get('content/create', "ContentController@create");
-    Route::post('content' , "ContentController@store");
-    Route::get('content/{id}/show' , "ContentController@show");
-    Route::get('content/{id}/edit' , "ContentController@edit");
-    Route::Patch('content/{id}' , "ContentController@update");
+    Route::get('event', "ChairitiesController@index");
+    Route::get('event/create', "ChairitiesController@create");
+    Route::post('event' , "ChairitiesController@store");
+    Route::get('event/{id}/edit' , "ChairitiesController@edit");
+    Route::Patch('event/{id}' , "ChairitiesController@update");
+
+    Route::get('program', "ChairitiesController@index");
+    Route::get('program/create', "ChairitiesController@create");
+    Route::post('program' , "ChairitiesController@store");
+    Route::get('program/{id}/edit' , "ChairitiesController@edit");
+    Route::Patch('program/{id}' , "ChairitiesController@update");
+
+    Route::get('project', "ChairitiesController@index");
+    Route::get('project/create', "ChairitiesController@create");
+    Route::post('project' , "ChairitiesController@store");
+    Route::get('project/{id}/edit' , "ChairitiesController@edit");
+    Route::Patch('project/{id}' , "ChairitiesController@update");
+
+    Route::get('bulletin', "BulletinController@index");
+    Route::get('bulletin/create', "BulletinController@create");
+    Route::post('bulletin' , "BulletinController@store");
+    Route::get('bulletin/{id}/edit' , "BulletinController@edit");
+    Route::Patch('bulletin/{id}' , "BulletinController@update");
     
     Route::get('people/{modul}', "PeopleController@index");
     Route::get('people/{modul}/create', "PeopleController@create");

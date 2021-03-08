@@ -27,15 +27,10 @@ class MainController extends Controller{
                 $data = $admin->first();
                 $ses = array(
                     'id' => $data->id,
-                    'roleid' => $data->roleid,
-                    'type' => $data->type,
-                    'title' => $data->title,
-                    'avatar' => $data->avatar,
                     'email' => $data->email,
                     'name' => $data->name,
                 );
                 Session::put($ses);
-                $this->log_system('login', 'Admin Logged In', Session::get('id'));
                 return redirect('dashboard');
             }else{
                 session::flash('error', 'danger');

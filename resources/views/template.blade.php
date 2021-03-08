@@ -4,17 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{{$title ?? ""}}</title>
-
-    {{-- <!-- Open Graph Meta -->
-    <meta property="og:title" content="Siapfulin">
-    <meta property="og:site_name" content="siapfulin">
-    <meta property="og:description"
-        content="Siapfulin - Marketplace Enabler &amp; Application to ease the user of marketplace">
-    <meta property="og:type" content="application">
-    <meta property="og:url" content="">
-    <meta property="og:image" content=""> --}}
-
-    <!-- Icons -->
+    
     <link rel="shortcut icon" href="{{asset('public/media/favicons/favicon.png')}}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{asset('public/media/favicons/favicon-192x192.png')}}">
     <link rel="apple-touch-icon" sizes="180x180"

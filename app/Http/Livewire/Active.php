@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\admin;
-use App\Models\country;
+use App\Models\bulletin;
 
 class Active extends Component{
     public $status,$status2,$modul,$key;
@@ -20,13 +20,10 @@ class Active extends Component{
         $this->status = $status2;
         if($modul == "admin"){
             $data = admin::findorfail($key);
-        }elseif($modul == "country"){
-            $data = country::findorfail($key);
+        }elseif($modul == "bulletin"){
+            $data = bulletion::findorfail($key);
         }
-
         $data->active = $status2;
-        $data->update_date = date("Y-m-d H:i:s");
-        $data->update_user = Session('id');
         $data->save();
     }
     public function render(){
