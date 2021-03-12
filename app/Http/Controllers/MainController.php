@@ -5,12 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Session;
 use App\Models\admin;
-use App\Models\user;
-use App\Models\destination;
-use App\Models\post_hdr;
 
 class MainController extends Controller{
-    use \App\Traits\General;
     public function index(){
         $data['title'] = "Login | Tangan Pengharapan";
         if(Session::has('id')){

@@ -106,9 +106,9 @@
 @endsection
 
 @section('footerScript')
-<script src="{{asset('public/js/plugins/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
-<script src="{{asset('public/js/plugins/chart.js/Chart.bundle.min.js')}}"></script>
-<script src="{{asset('public/js/pages/be_pages_dashboard.min.js')}}"></script>
+<script src="{{asset('js/plugins/jquery-sparkline/jquery.sparkline.min.js')}}"></script>
+<script src="{{asset('js/plugins/chart.js/Chart.bundle.min.js')}}"></script>
+<script src="{{asset('js/pages/be_pages_dashboard.min.js')}}"></script>
 <script>
     jQuery(function () {
 One.helpers(['sparkline']);

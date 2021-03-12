@@ -21,7 +21,7 @@ class Active extends Component{
         if($modul == "admin"){
             $data = admin::findorfail($key);
         }elseif($modul == "bulletin"){
-            $data = bulletion::findorfail($key);
+            $data = bulletin::findorfail($key);
         }
         $data->active = $status2;
         $data->save();

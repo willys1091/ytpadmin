@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{{$title ?? ""}}</title>
     
-    <link rel="shortcut icon" href="{{asset('public/media/favicons/favicon.png')}}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{asset('public/media/favicons/favicon-192x192.png')}}">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="{{asset('public//media/favicons/apple-touch-icon-180x180.png')}}">
+    <link rel="shortcut icon" href="{{asset('media/favicons/favicon.png')}}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{asset('media/favicons/favicon-192x192.png')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('/media/favicons/apple-touch-icon-180x180.png')}}">
 
     @yield('headerScript')
-    <link rel="stylesheet" id="css-main" href="{{asset('public/css/siapfulin.min.css')}}">
+    <link rel="stylesheet" id="css-main" href="{{asset('css/siapfulin.min.css')}}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>    
 </head>
@@ -44,9 +43,9 @@
     </div>
     @endif
     @include('modal')
-    <script src="{{asset('public/js/siapfulin.core.min.js')}}"></script>
-    <script src="{{asset('public/js/siapfulin.app.min.js')}}"></script>
-    <script src="{{asset('public/js/plugins/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
+    <script src="{{asset('js/siapfulin.core.min.js')}}"></script>
+    <script src="{{asset('js/siapfulin.app.min.js')}}"></script>
+    <script src="{{asset('js/plugins/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
     @include('notification')
     @yield('footerScript')
 </body>
