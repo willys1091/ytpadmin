@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use File;
+use Session;
 use App\Models\bulletin;
 
 class BulletinController extends Controller{
@@ -22,6 +25,17 @@ class BulletinController extends Controller{
     }
 
     public function store(Request $request){
+        $bulletin = new bulletin();
+        $bulletin->img = $request->newid.".".$request->imgext;
+        $bulletin->url = "http://119.8.190.183/doc/bulletin/doc/".$request->newid.".".$request->docext;
+        $bulletin->save();
+        storage::disk('ftp')->putFileAs('/var/www/html/doc/bulletin/doc/', asset('media/temp/bulletin/doc/'.$request->docfilename) , $request->newid.'.'.$request->docext);
+        storage::disk('ftp')->putFileAs('/var/www/html/doc/bulletin/img/', asset('media/temp/bulletin/img/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
+        storage::disk('public2')->delete('media/temp/bulletin/doc/'.$request->docfilename);
+        storage::disk('public2')->delete('media/temp/bulletin/img'.$request->imgfilename);
+        session::flash('error','success');
+        session::flash('message','Add Bulletin Successfull');
+        return redirect('bulletin');
         
     }
 

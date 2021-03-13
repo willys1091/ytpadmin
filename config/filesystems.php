@@ -52,6 +52,19 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
 
+        'public2' => [
+            'driver' => 'local',
+            'root' => public_path('/'),
+            'url' => env('APP_URL'),
+            'visibility' => 'public',
+        ],
+
+        'ftp' => [
+            'driver' => 'ftp',
+            'host' => '119.8.190.183',
+            'username' => 'root',
+            'password' => 'YTP-impact@2020',
+        ],
     ],
 
     /*
