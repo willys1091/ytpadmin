@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Session;
 use App\Models\admin;
+use App\Models\settings;
 
 class MainController extends Controller{
     public function index(){
@@ -27,6 +28,7 @@ class MainController extends Controller{
                     'name' => $data->name,
                 );
                 Session::put($ses);
+                Session::put('docs',settings::where('name','docs')->value('value'));
                 return redirect('dashboard');
             }else{
                 session::flash('error', 'danger');
@@ -51,7 +53,6 @@ class MainController extends Controller{
     }
 
     public function logout(){
-        $this->log_system('login', 'Admin Logged Out', Session::get('id'));
         $ses = array('id', 'roleid', 'type', 'title', 'avatar', 'email', 'name');
         Session::forget($ses);
         return redirect('/');

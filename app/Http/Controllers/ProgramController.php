@@ -15,36 +15,32 @@ class ProgramController extends Controller{
         return view('program.index',$data);
     }
 
-    public function create()
-    {
-        //
+    public function create(){
+        $data['title'] = "Program | Tangan Pengharapan";
+        $data['action'] = "add";
+        return view('bulletin.action',$data);
     }
 
-    public function store(Request $request)
-    {
+    public function store(Request $request){
         //
     }
 
     
-    public function show($id)
-    {
+    public function show($id){
         //
     }
 
-    public function edit($id)
-    {
-        //
-    }
-
-   
-    public function update(Request $request, $id)
-    {
+    public function edit($id){
         //
     }
 
    
-    public function destroy($id)
-    {
+    public function update(Request $request, $id){
+        //
+    }
+
+   
+    public function destroy($id){
         //
     }
 }

@@ -26,7 +26,7 @@ $name = strlen($tmp[0])>1?$tmp[0]:$tmp[1];
             <div class="dropdown d-inline-block ml-2">
                 <button type="button" class="btn btn-sm btn-dual d-flex align-items-center"
                     id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="rounded-circle" src="{{asset('public/media/avatars/avatar10.jpg')}}" alt="Header Avatar"
+                    <img class="rounded-circle" src="{{asset('media/avatars/avatar10.jpg')}}" alt="Header Avatar"
                         style="width: 21px;">
                     <span class="d-none d-sm-inline-block ml-2">{{ucwords($name)}}
                         ({{Session('companyname')?? "Tidak ada"}})</span>
@@ -36,7 +36,7 @@ $name = strlen($tmp[0])>1?$tmp[0]:$tmp[1];
                     aria-labelledby="page-header-user-dropdown">
                     <div class="p-3 text-center bg-primary-dark rounded-top">
                         <img class="img-avatar img-avatar48 img-avatar-thumb"
-                            src="{{asset('public/media/avatars/avatar10.jpg')}}" alt="">
+                            src="{{asset('media/avatars/avatar10.jpg')}}" alt="">
                         <p class="mt-2 mb-0 text-white font-w500">{{ucwords(Session('name'))}}</p>
                         <p class="mb-0 text-white-50 font-size-sm">{{Session('email')}}</p>
                     </div>

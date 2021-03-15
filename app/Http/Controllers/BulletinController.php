@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-@ini_set("post_max_size", "64M");
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use File;

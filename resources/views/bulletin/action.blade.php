@@ -12,12 +12,7 @@
     @endif @csrf
     <input type="hidden" class="action" value="{{$action}}"/>
     <div class="block-content font-size-sm">
-        
-
-        {{ ini_get('post_max_size')}}
-            @livewire('bulletin-img', ['action' => $action])
-        
-
+        @livewire('bulletin-img', ['action' => $action])
         <div class="block-content block-content-full text-right border-top" >
           
             <button type="button" class="btn btn-alt-primary mr-1" data-dismiss="modal">Close</button>
