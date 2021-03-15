@@ -6,15 +6,17 @@
         </div>
     </div>
     @if($action=='add')
-        <form action="{{url('bulletin')}}" method="post" onsubmit="submit.disabled = true; return true;">
+        <form action="{{url('bulletin')}}" method="post" onsubmit="submit.disabled = true; return true;" enctype="multipart/form-data">
     @else
-        <form action="{{url('bulletin/'.$bulletin->id)}}" method="post"> @method('patch')
+        <form action="{{url('bulletin/'.$bulletin->id)}}" method="post" enctype="multipart/form-data"> @method('patch')
     @endif @csrf
     <input type="hidden" class="action" value="{{$action}}"/>
     <div class="block-content font-size-sm">
-        <div class="row">
+        
+
+        {{ ini_get('post_max_size')}}
             @livewire('bulletin-img', ['action' => $action])
-        </div>
+        
 
         <div class="block-content block-content-full text-right border-top" >
           

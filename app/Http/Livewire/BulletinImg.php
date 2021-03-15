@@ -7,6 +7,7 @@ use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Storage;
 use App\Models\bulletin;
 
+
 class BulletinImg extends Component{
     use WithFileUploads;
 
