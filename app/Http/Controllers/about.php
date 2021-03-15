@@ -6,7 +6,12 @@ use Illuminate\Http\Request;
 
 class about extends Controller{
     public function index(){
-        //
+        $data['title'] = "About | Tangan Pengharapan";
+        $data['subtitle'] = "List of About";
+        $data['contentHeader'] = "mdl";
+        $data['btn'] = array('title' => 'Add About', 'url' => 'about/create', 'icon' => 'fas fa-plus');
+        $data['about'] = about::all();
+        return view('about.index',$data);
     }
 
     public function create(){

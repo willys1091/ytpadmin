@@ -8,7 +8,6 @@ use File;
 use Session;
 use App\Models\bulletin;
 
-
 class BulletinController extends Controller{
     public function index(){
         $data['title'] = "Bulletin | Tangan Pengharapan";

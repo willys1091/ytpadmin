@@ -10,6 +10,7 @@ class CreateBulletin extends Migration{
             $table->id();
             $table->string('img');
             $table->string('url');
+            $table->string('file');
             $table->boolean('active')->default(1);
             $table->timestamps();
         });

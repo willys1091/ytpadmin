@@ -4,9 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class event extends Controller{
+class EventController extends Controller{
     public function index(){
-        //
+        $data['title'] = "Event | Tangan Pengharapan";
+        $data['subtitle'] = "List of Event";
+        $data['contentHeader'] = "mdl";
+        $data['btn'] = array('title' => 'Add Event', 'url' => 'event/create', 'icon' => 'fas fa-plus');
+        $data['event'] = event::all();
+        return view('event.index',$data);
     }
 
     public function create(){

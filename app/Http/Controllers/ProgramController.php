@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\program;
 
 class ProgramController extends Controller{
+    use \App\Traits\General; 
     public function index(){
         $data['title'] = "Program | Tangan Pengharapan";
         $data['subtitle'] = "List of Program";
