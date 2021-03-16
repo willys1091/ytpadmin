@@ -59,11 +59,10 @@ return [
             'visibility' => 'public',
         ],
 
-        'ftp' => [
-            'driver' => 'ftp',
-            'host' => '119.8.190.183',
-            'username' => 'root',
-            'password' => 'YTP-impact@2020',
+        'public3' => [
+            'driver' => 'local',
+            'root'   => '/var/www/html/docytp',
+            'visibility' => 'public',
         ],
     ],
 

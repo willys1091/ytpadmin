@@ -9,7 +9,7 @@ class CreateBulletin extends Migration{
         Schema::create('bulletin', function (Blueprint $table) {
             $table->id();
             $table->string('img');
-            $table->string('url');
+            $table->string('url')->nullable();
             $table->string('file');
             $table->boolean('active')->default(1);
             $table->timestamps();
