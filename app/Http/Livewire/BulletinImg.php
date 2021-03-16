@@ -21,14 +21,13 @@ class BulletinImg extends Component{
         storage::disk('public2')->putFileAs('media/temp/bulletin/img', $this->img , $this->img->getClientOriginalName());
         $this->imgfilename = $this->img->getClientOriginalName();
         $this->imgext = $this->img->extension();
-        // $this->emit('img',$this->logofilename);
+        $this->emit('img',$this->imgfilename);
     }
 
     public function updatedDoc(){
         storage::disk('public2')->putFileAs('media/temp/bulletin/doc', $this->doc , $this->doc->getClientOriginalName());
         $this->docfilename = $this->doc->getClientOriginalName();
         $this->docext = $this->doc->extension();
-        // $this->emit('img',$this->logofilename);
     }
 
     public function render(){

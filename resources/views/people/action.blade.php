@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label for="Name">Name <span class="merah">*</span></label>
+                    <label for="Name">Name <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" name="name" placeholder="Name" value="{{$action=='edit'?$data->name:''}}" required>
                 </div>
             </div>
