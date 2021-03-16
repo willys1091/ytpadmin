@@ -37,25 +37,38 @@ class BulletinController extends Controller{
         session::flash('error','success');
         session::flash('message','Add Bulletin Successfull');
         return redirect('bulletin');
-
     }
 
     public function show($id){
-        
     }
 
     public function edit($id){
         $data['title'] = "Bulletin | Tangan Pengharapan";
         $data['action'] = "edit";
+        $data['data'] = bulletin::findorfail($id);
         return view('bulletin.action',$data);
     }
 
     public function update(Request $request, $id){
-        //
+        $bulletin = bulletin::findorfail($id);
+        $request->userfile <> "" ?$bulletin->img = $request->newid.".".$request->imgext:"";
+        $bulletin->url = $request->url;
+        $request->userfile2 <> "" ?$bulletin->file = $request->newid.".".$request->docext:"";
+        $bulletin->save();
+        if($request->userfile <> ""){
+            storage::disk('public3')->putFileAs('img/buletin/', asset('media/temp/bulletin/img/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
+            storage::disk('public2')->delete('media/temp/bulletin/img'.$request->imgfilename);
+        }
+
+        if($request->userfile2 <> ""){
+            storage::disk('public3')->putFileAs('doc/buletin/', asset('media/temp/bulletin/doc/'.$request->docfilename) , $request->newid.'.'.$request->docext);
+            storage::disk('public2')->delete('media/temp/bulletin/doc/'.$request->docfilename);
+        }
+        session::flash('error','success');
+        session::flash('message','Edit Bulletin Successfull');
+        return redirect('bulletin');
     }
 
-    public function destroy($id)
-    {
-        //
+    public function destroy($id){
     }
 }

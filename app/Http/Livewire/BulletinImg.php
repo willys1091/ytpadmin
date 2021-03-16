@@ -12,9 +12,10 @@ class BulletinImg extends Component{
 
     public $action,$img,$imgfilename,$imgext,$doc,$docfilename,$docext,$newid;
 
-    public function mount($action){
-        $this->newid = bulletin::max('id') +1;
+    public function mount($action,$dataimg,$dataid){
+        $this->newid = $action=='add'? bulletin::max('id') +1 : $dataid;
         $this->action = $action;
+        $action=='edit'?$this->imgfilename = $dataimg:'';
     }
 
     public function updatedImg(){

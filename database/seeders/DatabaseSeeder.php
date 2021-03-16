@@ -10,5 +10,6 @@ class DatabaseSeeder extends Seeder{
         $this->call(BulletinSeeder::class);
         $this->call(ChairitySeeder::class);
         $this->call(ProgramSeeder::class);
+        $this->call(SettingSeeder::class);
     }
 }

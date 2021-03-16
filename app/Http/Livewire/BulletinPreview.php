@@ -5,12 +5,13 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 
 class BulletinPreview extends Component{
-    public $action,$dataimg,$filenames;
+    public $action,$dataimg,$url,$filenames;
 
     protected $listeners = ['img'];
 
-    public function mount($action){
+    public function mount($action,$dataimg,$dataurl){
         $this->action = $action;
+        $this->url = $action=='add'?'':$dataurl<>'0'?$dataurl:'';
     }
 
     public function img($filename){
