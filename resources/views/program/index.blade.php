@@ -20,12 +20,12 @@
                      <tr>
                         <td class="text-center font-size-sm">{{$x}}</td>
                         <td>{{$p->title}}</td>
+                        <td class="text-center"><img src="{{Session('docs')}}/img/program/{{$p->img}}" width="100px" class="img-fluid"></td>
                         <td>{{$General->readmore($p->desc,50)}}</td>
-                        {{--<td><a href="{{$b->url}}"><i class="fa fa-globe"></i></a></td>
                         <td class="text-center">
-                            @livewire('active', ['status' => $b->active,'modul'=> 'bulletin','key'=> $b->id])
-                            <a onClick='showM("{{url('bulletin/'.$b->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
-                        </td> --}}
+                             @livewire('active', ['status' => $p->active,'modul'=> 'program','key'=> $p->id])
+                            <a onClick='showM("{{url('program/'.$p->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
+                        </td>
                     </tr> 
                     @php $x++ @endphp
                     @endforeach

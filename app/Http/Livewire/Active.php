@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\admin;
 use App\Models\bulletin;
+use App\Models\program;
 
 class Active extends Component{
     public $status,$status2,$modul,$key;
@@ -22,6 +23,8 @@ class Active extends Component{
             $data = admin::findorfail($key);
         }elseif($modul == "bulletin"){
             $data = bulletin::findorfail($key);
+        }elseif($modul == "program"){
+            $data = program::findorfail($key);
         }
         $data->active = $status2;
         $data->save();
