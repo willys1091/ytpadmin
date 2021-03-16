@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ChairityController extends Controller{
+class BannerController extends Controller{
     public function index(){
-        $data['title'] = "Chairity | Tangan Pengharapan";
-        $data['subtitle'] = "List of Chairity";
+        $data['title'] = "Banner | Tangan Pengharapan";
+        $data['subtitle'] = "List of Banner";
         $data['contentHeader'] = "mdl";
         $data['btn'] = array('title' => 'Add Chairity', 'url' => 'chairity/create', 'icon' => 'fas fa-plus');
-        // $data['chairity'] = chairity::all();
+        $data['chairity'] = chairity::all();
         return view('chairity.index',$data);
     }
 

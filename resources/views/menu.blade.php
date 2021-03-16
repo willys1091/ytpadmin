@@ -22,7 +22,7 @@
                     </a>
                     <ul class="nav-main-submenu">
                         <li class="nav-main-item">
-                            <a class="nav-main-link {{request::segment(1)=='category'?"active":""}}" href="{{url('category')}}">
+                            <a class="nav-main-link {{request::segment(1)=='chairity'?"active":""}}" href="{{url('chairity')}}">
                                 <span class="nav-main-link-name">Chairity</span>
                             </a>
                         </li>

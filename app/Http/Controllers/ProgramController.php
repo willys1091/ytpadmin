@@ -28,11 +28,12 @@ class ProgramController extends Controller{
 
     
     public function show($id){
-        //
     }
 
     public function edit($id){
-        //
+        $data['title'] = "Program | Tangan Pengharapan";
+        $data['action'] = "edit";
+        return view('bulletin.action',$data);
     }
 
    
@@ -42,6 +43,5 @@ class ProgramController extends Controller{
 
    
     public function destroy($id){
-        //
     }
 }
