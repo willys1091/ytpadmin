@@ -41,7 +41,6 @@
     <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/datatables/dataTables.bootstrap4.css')}}">
     <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/datatables/responsive.bootstrap4.min.css')}}">
     <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css')}}">
-    <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/select2/css/select2.min.css')}}">
     <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/flatpickr/flatpickr.min.css')}}">
 @endsection
 
@@ -55,15 +54,14 @@
     <script src="{{asset('js/plugins/datatables/buttons/buttons.html5.min.js')}}"></script>
     <script src="{{asset('js/plugins/datatables/buttons/buttons.flash.min.js')}}"></script>
     <script src="{{asset('js/plugins/datatables/buttons/buttons.colVis.min.js')}}"></script>
+    <script src="{{asset('js/siapfulin.js')}}"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.6/js/responsive.bootstrap4.min.js"></script>
-    <script src="{{asset('js/siapfulin.js')}}"></script>
-    <script src="{{asset('js/plugins/select2/js/select2.full.min.js')}}"></script>
 @stack('scripts')
 <script>
     
     jQuery(function () {
-        Siap.helpers(['flatpickr']);
+        Siap.helpers(['flatpickr','summernote']);
     });
 </script>
 @endsection

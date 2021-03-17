@@ -12,8 +12,11 @@
     @endif @csrf
     <input type="hidden" class="action" value="{{$action}}"/>
     <div class="block-content font-size-sm">
+
         @livewire('bulletin-img', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
+
         @livewire('bulletin-preview', ['action' => $action,'dataimg' =>$data->img??0,'dataurl' =>$data->url??0])
+        
         <div class="block-content block-content-full text-right border-top" >
             <button type="button" class="btn btn-alt-primary mr-1" data-dismiss="modal">Close</button>
             <button type="submit"  class="btn btn-primary">Save</button> 

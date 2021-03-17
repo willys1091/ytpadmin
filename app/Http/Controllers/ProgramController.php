@@ -19,7 +19,7 @@ class ProgramController extends Controller{
     public function create(){
         $data['title'] = "Program | Tangan Pengharapan";
         $data['action'] = "add";
-        return view('bulletin.action',$data);
+        return view('program.action',$data);
     }
 
     public function store(Request $request){
@@ -33,7 +33,7 @@ class ProgramController extends Controller{
     public function edit($id){
         $data['title'] = "Program | Tangan Pengharapan";
         $data['action'] = "edit";
-        return view('bulletin.action',$data);
+        return view('program.action',$data);
     }
 
    
