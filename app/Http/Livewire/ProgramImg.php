@@ -12,7 +12,7 @@ class ProgramImg extends Component{
 
     public $action,$img,$imgfilename,$imgext,$newid;
 
-    public function mount($dataimg,$dataid){
+    public function mount($action,$dataimg,$dataid){
         $this->newid = $action=='add'? program::max('id') +1 : $dataid;
         $this->action = $action;
         $action=='edit'?$this->imgfilename = $dataimg:'';

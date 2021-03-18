@@ -18,15 +18,17 @@
                     <label for="Name">Title <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" name="title" placeholder="Title" value="{{$action=='edit'?$data->title:''}}" required>
                 </div>
+                @livewire('program-img', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
             </div>
+            
+            @livewire('program-preview', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
         </div>
 
-        @livewire('program-img', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
         <div class="row">
             <div class="col-lg-12">
                 <div class="form-group">
                     <label for="Name">Description <span class="text-danger">*</span></label>
-                    <textarea id="js-ckeditor" name="desc"></textarea>
+                    <textarea class="form-control" name="desc" rows="3" placeholder="Program Description..">{{$action=='edit'?$data->desc:''}}</textarea>
                 </div>
             </div>
         </div>
@@ -38,12 +40,5 @@
     </div>
     </form>
 </div>
-<link rel="stylesheet" id="css-main" href="{{asset('js/plugins/summernote/summernote-bs4.css')}}">
-<script src="{{asset('js/plugins/ckeditor/ckeditor.js')}}"></script>
-<script>
-    jQuery(function () {
-        Siap.helpers(['ckeditor']);
-    });
-    Livewire.restart();
 
-</script>
+<script>Livewire.restart();</script>

@@ -33,7 +33,7 @@ class BulletinController extends Controller{
         storage::disk('public3')->putFileAs('doc/buletin/', asset('media/temp/bulletin/doc/'.$request->docfilename) , $request->newid.'.'.$request->docext);
         storage::disk('public3')->putFileAs('img/buletin/', asset('media/temp/bulletin/img/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
         storage::disk('public2')->delete('media/temp/bulletin/doc/'.$request->docfilename);
-        storage::disk('public2')->delete('media/temp/bulletin/img'.$request->imgfilename);
+        storage::disk('public2')->delete('media/temp/bulletin/img/'.$request->imgfilename);
         session::flash('error','success');
         session::flash('message','Add Bulletin Successfull');
         return redirect('bulletin');
@@ -57,7 +57,7 @@ class BulletinController extends Controller{
         $bulletin->save();
         if($request->userfile <> ""){
             storage::disk('public3')->putFileAs('img/buletin/', asset('media/temp/bulletin/img/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
-            storage::disk('public2')->delete('media/temp/bulletin/img'.$request->imgfilename);
+            storage::disk('public2')->delete('media/temp/bulletin/img/'.$request->imgfilename);
         }
 
         if($request->userfile2 <> ""){

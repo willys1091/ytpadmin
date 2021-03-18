@@ -4,21 +4,18 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class BulletinPreview extends Component{
+class ProgramPreview extends Component{
     public $action,$dataimg,$url,$filenames;
-
     protected $listeners = ['img'];
 
-    public function mount($action,$dataimg,$dataurl){
+    public function mount($action,$dataimg){
         $this->action = $action;
-        $action=='edit'? $this->url = $dataurl<>'0'?$dataurl:'' :'';  
     }
 
     public function img($filename){
         $this->dispatchBrowserEvent('getimg',['filename'=>$filename]);
     }
-
     public function render(){
-        return view('livewire.bulletin-preview');
+        return view('livewire.program-preview');
     }
 }

@@ -1,5 +1,4 @@
-<div class="row">
-    <div class="col-lg-6">
+
         <div class="form-group">
             <label>Image <span class="text-danger">*</span></label>
             <div class="custom-file">
@@ -10,5 +9,3 @@
                 <input type="hidden" name="newid" value="{{$newid??''}}">
             </div>
         </div>
-    </div>
-</div>
