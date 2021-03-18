@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\admin;
 use App\Models\bulletin;
 use App\Models\program;
+use App\Models\chairity;
 
 class Active extends Component{
     public $status,$status2,$modul,$key;
@@ -25,6 +26,8 @@ class Active extends Component{
             $data = bulletin::findorfail($key);
         }elseif($modul == "program"){
             $data = program::findorfail($key);
+        }elseif($modul == "chairity"){
+            $data = chairity::findorfail($key);
         }
         $data->active = $status2;
         $data->save();

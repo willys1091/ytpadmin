@@ -29,8 +29,7 @@ class ChairitiesController extends Controller{
         //
     }
 
-    public function destroy($id)
-    {
+    public function destroy($id){
         //
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\chairity;
 
 class ChairityController extends Controller{
     public function index(){
@@ -15,7 +16,9 @@ class ChairityController extends Controller{
     }
 
     public function create(){
-        
+        $data['title'] = "Chairity | Tangan Pengharapan";
+        $data['action'] = "add";
+        return view('chairity.action',$data);
     }
 
     public function store(Request $request){
@@ -27,7 +30,9 @@ class ChairityController extends Controller{
     }
 
     public function edit($id){
-    
+        $data['title'] = "Chairity | Tangan Pengharapan";
+        $data['action'] = "edit";
+        return view('chairity.action',$data);
     }
 
     public function update(Request $request, $id){

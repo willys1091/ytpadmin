@@ -79,7 +79,7 @@
                 </li>
 
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='settings'?"active":""}}" href="{{url('settings')}}">
+                    <a class="nav-main-link {{request::segment(1)=='people'?"active":""}}" href="{{url('people')}}">
                         <i class="nav-main-link-icon fa fa-user"></i>
                         <span class="nav-main-link-name">Admin</span>
                     </a>
