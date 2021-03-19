@@ -63,11 +63,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('bulletin/{id}/edit' , "BulletinController@edit");
     Route::Patch('bulletin/{id}' , "BulletinController@update");
     
-    Route::get('people/{modul}', "PeopleController@index");
-    Route::get('people/{modul}/create', "PeopleController@create");
-    Route::get('people/{modul}/youtuber', "PeopleController@youtuber");
+    Route::get('people/', "PeopleController@index");
+    Route::get('people/create', "PeopleController@create");
+    Route::get('people/youtuber', "PeopleController@youtuber");
     Route::post('people', "PeopleController@store");
-    Route::get('people/{modul}/{id}/edit', "PeopleController@edit");
+    Route::get('people/{id}/edit', "PeopleController@edit");
     Route::patch('people/{id}', "PeopleController@update");
 
     Route::get('role', "RoleController@index");
