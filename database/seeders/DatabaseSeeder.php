@@ -11,5 +11,7 @@ class DatabaseSeeder extends Seeder{
         $this->call(ChairitySeeder::class);
         $this->call(ProgramSeeder::class);
         $this->call(SettingSeeder::class);
+        $this->call(PartnerSeeder::class);
+        $this->call(PostCategorySeeder::class);
     }
 }

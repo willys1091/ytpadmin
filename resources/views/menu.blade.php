@@ -16,7 +16,7 @@
                     </a>
                 </li>
                
-                <li class="nav-main-item {{request::segment(1)=='category'||request::segment(1)=='country'||request::segment(1)=='destination'?'open':''}}">
+                <li class="nav-main-item {{request::segment(1)=='chairity'||request::segment(1)=='postcategory'||request::segment(1)=='destination'?'open':''}}">
                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
                         <i class="nav-main-link-icon fa fa-truck"></i><span class="nav-main-link-name">Attribute</span>
                     </a>
@@ -26,57 +26,65 @@
                                 <span class="nav-main-link-name">Chairity</span>
                             </a>
                         </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link {{request::segment(1)=='postcategory'?"active":""}}" href="{{url('postcategory')}}">
+                                <span class="nav-main-link-name">Post Category</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
-            
-                
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='settings'?"active":""}}" href="{{url('banner')}}">
+                    <a class="nav-main-link {{request::segment(1)=='banner'?"active":""}}" href="{{url('banner')}}">
                         <i class="nav-main-link-icon fa fa-photo-video"></i>
-                        <span class="nav-main-link-name">Banner</span>
+                        <span class="nav-main-link-name">Post</span>
                     </a>
                 </li>
+
+                <li class="nav-main-heading">Gallery</li>
+                
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='settings'?"active":""}}" href="{{url('about')}}">
+                    <a class="nav-main-link {{request::segment(1)=='about'?"active":""}}" href="{{url('about')}}">
                         <i class="nav-main-link-icon fa fa-address-card"></i>
                         <span class="nav-main-link-name">About</span>
                     </a>
                 </li>
 
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='settings'?"active":""}}" href="{{url('event')}}">
+                    <a class="nav-main-link {{request::segment(1)=='event'?"active":""}}" href="{{url('event')}}">
                         <i class="nav-main-link-icon fa fa-calendar-alt"></i>
                         <span class="nav-main-link-name">Event</span>
                     </a>
                 </li>
 
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='settings'?"active":""}}" href="{{url('program')}}">
+                    <a class="nav-main-link {{request::segment(1)=='program'?"active":""}}" href="{{url('program')}}">
                         <i class="nav-main-link-icon fa fa-tasks"></i>
                         <span class="nav-main-link-name">Program</span>
                     </a>
                 </li>
 
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='settings'?"active":""}}" href="{{url('project')}}">
+                    <a class="nav-main-link {{request::segment(1)=='project'?"active":""}}" href="{{url('project')}}">
                         <i class="nav-main-link-icon fa fa-project-diagram"></i>
                         <span class="nav-main-link-name">Project</span>
                     </a>
                 </li>
 
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='settings'?"active":""}}" href="{{url('bulletin')}}">
+                    <a class="nav-main-link {{request::segment(1)=='bulletin'?"active":""}}" href="{{url('bulletin')}}">
                         <i class="nav-main-link-icon fa fa-newspaper"></i>
                         <span class="nav-main-link-name">Bulletin</span>
                     </a>
                 </li>
 
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='settings'?"active":""}}" href="{{url('charities')}}">
+                    <a class="nav-main-link {{request::segment(1)=='charities'?"active":""}}" href="{{url('charities')}}">
                         <i class="nav-main-link-icon fa fa-hand-holding-heart"></i>
                         <span class="nav-main-link-name">Chairities</span>
                     </a>
                 </li>
+
+                <li class="nav-main-heading">System</li>
 
                 <li class="nav-main-item">
                     <a class="nav-main-link {{request::segment(1)=='people'?"active":""}}" href="{{url('people')}}">

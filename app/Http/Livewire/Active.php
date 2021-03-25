@@ -7,6 +7,7 @@ use App\Models\admin;
 use App\Models\bulletin;
 use App\Models\program;
 use App\Models\chairity;
+use App\Models\postcategory;
 
 class Active extends Component{
     public $status,$status2,$modul,$key;
@@ -28,6 +29,8 @@ class Active extends Component{
             $data = program::findorfail($key);
         }elseif($modul == "chairity"){
             $data = chairity::findorfail($key);
+        }elseif($modul == "postcategory"){
+            $data = postcategory::findorfail($key);
         }
         $data->active = $status2;
         $data->save();

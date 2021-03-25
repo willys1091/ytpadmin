@@ -4,18 +4,17 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSettingsTable extends Migration{
-    public function up()
-    {
-        Schema::create('settings', function (Blueprint $table) {
+class CreatePostCategory extends Migration{
+    public function up(){
+        Schema::create('postcategory', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('value');
+            $table->boolean('active')->default(1);
             $table->timestamps();
         });
     }
 
     public function down(){
-        Schema::dropIfExists('settings');
+        Schema::dropIfExists('post_category');
     }
 }

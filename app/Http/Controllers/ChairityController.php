@@ -42,7 +42,7 @@ class ChairityController extends Controller{
     }
 
     public function update(Request $request, $id){
-        $chairity = new chairity();
+        $chairity = chairity::findorfail($id);
         $chairity->name = $request->name;
         $chairity->save();
         session::flash('error','success');

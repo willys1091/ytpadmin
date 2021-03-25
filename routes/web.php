@@ -27,12 +27,18 @@ Route::middleware(['auth'])->group(function () {
     Route::get('chairity/{id}/edit' , "ChairityController@edit");
     Route::Patch('chairity/{id}' , "ChairityController@update");
 
-    Route::get('banner', "BannerController@index");
-    Route::get('banner/create', "BannerController@create");
-    Route::post('banner' , "BannerController@store");
-    Route::get('banner/{id}/edit' , "BannerController@edit");
-    Route::Patch('banner/{id}' , "BannerController@update");
+    Route::get('postcategory', "PostCategoryController@index");
+    Route::get('postcategory/create', "PostCategoryController@create");
+    Route::post('postcategory' , "PostCategoryController@store");
+    Route::get('postcategory/{id}/edit' , "PostCategoryController@edit");
+    Route::Patch('postcategory/{id}' , "PostCategoryController@update");
 
+    Route::get('about', "AboutController@index");
+    Route::get('about/create', "AboutController@create");
+    Route::post('about' , "AboutController@store");
+    Route::get('about/{id}/edit' , "AboutController@edit");
+    Route::Patch('about/{id}' , "AboutController@update");
+    
     Route::get('about', "AboutController@index");
     Route::get('about/create', "AboutController@create");
     Route::post('about' , "AboutController@store");
