@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Models\partner;
 
 class PartnerImg extends Component{
+    use WithFileUploads;
     public $action,$img,$imgfilename,$imgext,$newid;
 
     public function mount($action,$dataimg,$dataid){
@@ -17,7 +18,7 @@ class PartnerImg extends Component{
     }
 
     public function updatedImg(){
-        storage::disk('public2')->putFileAs('media/temp/program/img', $this->img , str_replace(" ", "_", $this->img->getClientOriginalName()));
+        storage::disk('public2')->putFileAs('media/temp/partner/', $this->img , str_replace(" ", "_", $this->img->getClientOriginalName()));
         $this->imgfilename = str_replace(" ", "_", $this->img->getClientOriginalName());
         $this->imgext = $this->img->extension();
         $this->emit('img',$this->imgfilename);

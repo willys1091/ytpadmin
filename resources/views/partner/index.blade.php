@@ -20,7 +20,7 @@
                      
                         <td class="text-center">
                             @livewire('active', ['status' => $p->active,'modul'=> 'partner','key'=> $p->id])
-                            <a onClick='showM("{{url('bulletin/'.$p->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
+                            <a onClick='showM("{{url('partner/'.$p->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
                         </td>
                     </tr> 
                     @php $x++ @endphp
@@ -37,7 +37,6 @@
     <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/datatables/dataTables.bootstrap4.css')}}">
     <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/datatables/responsive.bootstrap4.min.css')}}">
     <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css')}}">
-    <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/select2/css/select2.min.css')}}">
     <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/flatpickr/flatpickr.min.css')}}">
 @endsection
 
@@ -54,7 +53,6 @@
     <script src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.6/js/responsive.bootstrap4.min.js"></script>
     <script src="{{asset('js/siapfulin.js')}}"></script>
-    <script src="{{asset('js/plugins/select2/js/select2.full.min.js')}}"></script>
 @stack('scripts')
 <script>
     

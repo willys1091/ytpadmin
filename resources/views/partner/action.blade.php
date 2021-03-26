@@ -6,16 +6,16 @@
         </div>
     </div>
     @if($action=='add')
-        <form action="{{url('bulletin')}}" method="post" onsubmit="submit.disabled = true; return true;" >
+        <form action="{{url('partner')}}" method="post" onsubmit="submit.disabled = true; return true;" >
     @else
-        <form action="{{url('bulletin/'.$data->id)}}" method="post"> @method('patch')
+        <form action="{{url('partner/'.$data->id)}}" method="post"> @method('patch')
     @endif @csrf
     <input type="hidden" class="action" value="{{$action}}"/>
     <div class="block-content font-size-sm">
 
-        @livewire('bulletin-img', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
+        @livewire('partner-img', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
 
-        @livewire('bulletin-preview', ['action' => $action,'dataimg' =>$data->img??0,'dataurl' =>$data->url??0])
+        @livewire('partner-preview', ['action' => $action,'dataimg' =>$data->img??0,'dataurl' =>$data->url??0])
         
         <div class="block-content block-content-full text-right border-top" >
             <button type="button" class="btn btn-alt-primary mr-1" data-dismiss="modal">Close</button>
