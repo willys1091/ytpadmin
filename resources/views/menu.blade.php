@@ -71,6 +71,13 @@
                 </li>
 
                 <li class="nav-main-item">
+                    <a class="nav-main-link {{request::segment(1)=='partner'?"active":""}}" href="{{url('partner')}}">
+                        <i class="nav-main-link-icon fa fa-handshake"></i>
+                        <span class="nav-main-link-name">Partner</span>
+                    </a>
+                </li>
+
+                <li class="nav-main-item">
                     <a class="nav-main-link {{request::segment(1)=='bulletin'?"active":""}}" href="{{url('bulletin')}}">
                         <i class="nav-main-link-icon fa fa-newspaper"></i>
                         <span class="nav-main-link-name">Bulletin</span>

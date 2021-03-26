@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class about extends Controller{
+class AboutController extends Controller{
     public function index(){
         $data['title'] = "About | Tangan Pengharapan";
         $data['subtitle'] = "List of About";

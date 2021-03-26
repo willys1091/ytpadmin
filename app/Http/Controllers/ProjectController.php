@@ -3,13 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use File;
-use Session;
-use App\Models\projects;
 
-class project extends Controller{
+class ProjectController extends Controller{
     public function index(){
-        $data['title'] = "Prohect | Tangan Pengharapan";
+        $data['title'] = "Project | Tangan Pengharapan";
         $data['subtitle'] = "List of Project";
         $data['contentHeader'] = "mdl";
         $data['btn'] = array('title' => 'Add Project', 'url' => 'project/create', 'icon' => 'fas fa-plus');
@@ -18,7 +15,9 @@ class project extends Controller{
     }
 
     public function create(){
-        //
+        $data['title'] = "Project | Tangan Pengharapan";
+        $data['action'] = "add";
+        return view('project.action',$data);
     }
 
     public function store(Request $request){
@@ -30,7 +29,9 @@ class project extends Controller{
     }
 
     public function edit($id){
-        //
+        $data['title'] = "Project | Tangan Pengharapan";
+        $data['action'] = "add";
+        return view('project.action',$data);
     }
 
     public function update(Request $request, $id){

@@ -16,12 +16,11 @@
                     @foreach($partner as $p)
                     <tr>
                         <td class="text-center font-size-sm">{{$x}}</td>
-                        <td class="text-center"><img src="{{Session('docs')}}/img/buletin/{{$b->img}}" width="100px" class="img-fluid"></td>
-                        <td class="text-center">{!! $b->url<>''?'<a href="'. $b->url.'"><i class="fas fa-fw fa-globe"></a>':'<i class="fas fa-fw fa-globe">'!!}</td>
+                        <td class="text-center"><img src="{{Session('docs')}}/img/partner/{{$p->img}}" width="100px" class="img-fluid"></td>
+                     
                         <td class="text-center">
-                            <a href="{{session('docs')}}/doc/buletin/{{$b->file}}" type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-file-pdf"></i></a>
-                            @livewire('active', ['status' => $b->active,'modul'=> 'bulletin','key'=> $b->id])
-                            <a onClick='showM("{{url('bulletin/'.$b->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
+                            @livewire('active', ['status' => $p->active,'modul'=> 'partner','key'=> $p->id])
+                            <a onClick='showM("{{url('bulletin/'.$p->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
                         </td>
                     </tr> 
                     @php $x++ @endphp

@@ -12,7 +12,7 @@ class PartnerController extends Controller{
         $data['subtitle'] = "List of Partner";
         $data['contentHeader'] = "mdl";
         $data['btn'] = array('title' => 'Add Partner', 'url' => 'partner/create', 'icon' => 'fas fa-plus');
-        $data['partner'] = event::all();
+        $data['partner'] = partner::all();
         return view('partner.index',$data);
     }
 

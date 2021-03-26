@@ -63,6 +63,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('project/{id}/edit' , "ProjectController@edit");
     Route::Patch('project/{id}' , "ProjectController@update");
 
+    Route::get('partner', "PartnerController@index");
+    Route::get('partner/create', "PartnerController@create");
+    Route::post('partner' , "PartnerController@store");
+    Route::get('partner/{id}/edit' , "PartnerController@edit");
+    Route::Patch('partner/{id}' , "PartnerController@update");
+
     Route::get('bulletin', "BulletinController@index");
     Route::get('bulletin/create', "BulletinController@create");
     Route::post('bulletin' , "BulletinController@store");
