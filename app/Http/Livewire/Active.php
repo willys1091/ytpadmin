@@ -8,6 +8,7 @@ use App\Models\bulletin;
 use App\Models\program;
 use App\Models\chairity;
 use App\Models\partner;
+use App\Models\event;
 use App\Models\postcategory;
 
 class Active extends Component{
@@ -34,6 +35,8 @@ class Active extends Component{
             $data = postcategory::findorfail($key);
         }elseif($modul == "partner"){
             $data = partner::findorfail($key);
+        }elseif($modul == "event"){
+            $data = event::findorfail($key);
         }
         $data->active = $status2;
         $data->save();

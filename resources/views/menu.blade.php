@@ -50,6 +50,13 @@
                 </li>
 
                 <li class="nav-main-item">
+                    <a class="nav-main-link {{request::segment(1)=='flc'?"active":""}}" href="{{url('flc')}}">
+                        <i class="nav-main-link-icon fa fa-graduation-cap"></i>
+                        <span class="nav-main-link-name">FLC</span>
+                    </a>
+                </li>
+
+                <li class="nav-main-item">
                     <a class="nav-main-link {{request::segment(1)=='event'?"active":""}}" href="{{url('event')}}">
                         <i class="nav-main-link-icon fa fa-calendar-alt"></i>
                         <span class="nav-main-link-name">Event</span>
@@ -64,13 +71,6 @@
                 </li>
 
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='project'?"active":""}}" href="{{url('project')}}">
-                        <i class="nav-main-link-icon fa fa-project-diagram"></i>
-                        <span class="nav-main-link-name">Project</span>
-                    </a>
-                </li>
-
-                <li class="nav-main-item">
                     <a class="nav-main-link {{request::segment(1)=='partner'?"active":""}}" href="{{url('partner')}}">
                         <i class="nav-main-link-icon fa fa-handshake"></i>
                         <span class="nav-main-link-name">Partner</span>
@@ -81,13 +81,6 @@
                     <a class="nav-main-link {{request::segment(1)=='bulletin'?"active":""}}" href="{{url('bulletin')}}">
                         <i class="nav-main-link-icon fa fa-newspaper"></i>
                         <span class="nav-main-link-name">Bulletin</span>
-                    </a>
-                </li>
-
-                <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='charities'?"active":""}}" href="{{url('charities')}}">
-                        <i class="nav-main-link-icon fa fa-hand-holding-heart"></i>
-                        <span class="nav-main-link-name">Chairities</span>
                     </a>
                 </li>
 
