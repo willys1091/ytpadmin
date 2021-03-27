@@ -36,7 +36,6 @@ class EventController extends Controller{
     }
 
     public function show($id){
-        //
     }
 
     public function edit($id){
@@ -47,10 +46,18 @@ class EventController extends Controller{
     }
 
     public function update(Request $request, $id){
-        //
+        $partner = partner::findorfail($id);
+        $partner->img = $request->newid.".".$request->imgext;
+        $partner->save();
+        if($request->userfile <> ""){
+            storage::disk('public3')->putFileAs('img/partner/', asset('media/temp/event/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
+            storage::disk('public2')->delete('media/temp/event/'.$request->imgfilename);
+        }
+        session::flash('error','success');
+        session::flash('message','Edit Event Successfull');
+        return redirect('event');
     }
 
     public function destroy($id){
-        //
     }
 }

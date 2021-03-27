@@ -19,7 +19,7 @@
                         <td class="text-center"><img src="{{Session('docs')}}/img/event/{{$e->img}}" width="100px" class="img-fluid"></td>
                      
                         <td class="text-center">
-                            @livewire('active', ['status' => $e->active,'modul'=> 'event','key'=> $p->id])
+                            @livewire('active', ['status' => $e->active,'modul'=> 'event','key'=> $e->id])
                             <a onClick='showM("{{url('partner/'.$e->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
                         </td>
                     </tr> 
