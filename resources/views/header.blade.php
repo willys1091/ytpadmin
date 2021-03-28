@@ -26,10 +26,8 @@ $name = strlen($tmp[0])>1?$tmp[0]:$tmp[1];
             <div class="dropdown d-inline-block ml-2">
                 <button type="button" class="btn btn-sm btn-dual d-flex align-items-center"
                     id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="rounded-circle" src="{{asset('media/avatars/avatar10.jpg')}}" alt="Header Avatar"
-                        style="width: 21px;">
-                    <span class="d-none d-sm-inline-block ml-2">{{ucwords($name)}}
-                        ({{Session('companyname')?? "Tidak ada"}})</span>
+                    <img class="rounded-circle" src="{{asset('media/avatars/avatar10.jpg')}}" alt="Header Avatar" style="width: 21px;">
+                    <span class="d-none d-sm-inline-block ml-2">{{ucwords($name)}}</span>
                     <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block ml-1 mt-1"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-md dropdown-menu-right p-0 border-0"

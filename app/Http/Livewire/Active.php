@@ -10,6 +10,7 @@ use App\Models\chairity;
 use App\Models\partner;
 use App\Models\event;
 use App\Models\flc;
+use App\Models\about;
 use App\Models\postcategory;
 
 class Active extends Component{
