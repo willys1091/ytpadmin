@@ -34,7 +34,7 @@
                     </ul>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link {{request::segment(1)=='banner'?"active":""}}" href="{{url('banner')}}">
+                    <a class="nav-main-link {{request::segment(1)=='post'?"active":""}}" href="{{url('post')}}">
                         <i class="nav-main-link-icon fa fa-photo-video"></i>
                         <span class="nav-main-link-name">Post</span>
                     </a>
