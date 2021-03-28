@@ -9,6 +9,7 @@ use App\Models\program;
 use App\Models\chairity;
 use App\Models\partner;
 use App\Models\event;
+use App\Models\flc;
 use App\Models\postcategory;
 
 class Active extends Component{
@@ -37,6 +38,8 @@ class Active extends Component{
             $data = partner::findorfail($key);
         }elseif($modul == "event"){
             $data = event::findorfail($key);
+        }elseif($modul == "flc"){
+            $data = flc::findorfail($key);
         }
         $data->active = $status2;
         $data->save();

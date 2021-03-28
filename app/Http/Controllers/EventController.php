@@ -25,9 +25,9 @@ class EventController extends Controller{
     }
 
     public function store(Request $request){
-        $partner = new event();
-        $partner->img = $request->newid.".".$request->imgext;
-        $partner->save();
+        $event = new event();
+        $event->img = $request->newid.".".$request->imgext;
+        $event->save();
         storage::disk('public3')->putFileAs('img/event/', asset('media/temp/event/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
         storage::disk('public2')->delete('media/temp/event/'.$request->imgfilename);
         session::flash('error','success');
@@ -46,11 +46,11 @@ class EventController extends Controller{
     }
 
     public function update(Request $request, $id){
-        $partner = partner::findorfail($id);
-        $partner->img = $request->newid.".".$request->imgext;
-        $partner->save();
+        $event = event::findorfail($id);
+        $event->img = $request->newid.".".$request->imgext;
+        $event->save();
         if($request->userfile <> ""){
-            storage::disk('public3')->putFileAs('img/partner/', asset('media/temp/event/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
+            storage::disk('public3')->putFileAs('img/event/', asset('media/temp/event/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
             storage::disk('public2')->delete('media/temp/event/'.$request->imgfilename);
         }
         session::flash('error','success');

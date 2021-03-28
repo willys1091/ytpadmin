@@ -13,14 +13,14 @@
                 </thead>
                 <tbody>
                     @php $x=1 @endphp
-                    @foreach($event as $e)
+                    @foreach($flc as $f)
                     <tr>
                         <td class="text-center font-size-sm">{{$x}}</td>
-                        <td class="text-center"><img src="{{Session('docs')}}/img/event/{{$e->img}}" width="100px" class="img-fluid"></td>
+                        <td class="text-center"><img src="{{Session('docs')}}/img/flc/{{$f->img}}" width="100px" class="img-fluid"></td>
                      
                         <td class="text-center">
-                            @livewire('active', ['status' => $e->active,'modul'=> 'event','key'=> $e->id])
-                            <a onClick='showM("{{url('event/'.$e->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
+                            @livewire('active', ['status' => $f->active,'modul'=> 'flc','key'=> $f->id])
+                            <a onClick='showM("{{url('flc/'.$f->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
                         </td>
                     </tr> 
                     @php $x++ @endphp

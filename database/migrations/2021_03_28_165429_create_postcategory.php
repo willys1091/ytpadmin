@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostCategory extends Migration{
+class CreatePostcategory extends Migration{
     public function up(){
         Schema::create('postcategory', function (Blueprint $table) {
             $table->id();
@@ -15,6 +15,6 @@ class CreatePostCategory extends Migration{
     }
 
     public function down(){
-        Schema::dropIfExists('post_category');
+        Schema::dropIfExists('postcategory');
     }
 }

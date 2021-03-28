@@ -39,11 +39,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('about/{id}/edit' , "AboutController@edit");
     Route::Patch('about/{id}' , "AboutController@update");
     
-    Route::get('about', "AboutController@index");
-    Route::get('about/create', "AboutController@create");
-    Route::post('about' , "AboutController@store");
-    Route::get('about/{id}/edit' , "AboutController@edit");
-    Route::Patch('about/{id}' , "AboutController@update");
+    Route::get('flc', "FlcController@index");
+    Route::get('flc/create', "FlcController@create");
+    Route::post('flc' , "FlcController@store");
+    Route::get('flc/{id}/edit' , "FlcController@edit");
+    Route::Patch('flc/{id}' , "FlcController@update");
 
     Route::get('event', "EventController@index");
     Route::get('event/create', "EventController@create");
