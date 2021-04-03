@@ -10,7 +10,7 @@ class PostController extends Controller{
     public function index(){
         $data['title'] = "Post | Tangan Pengharapan";
         $data['subtitle'] = "List of Web postings";
-        $data['contentHeader'] = "mdl";
+        $data['contentHeader'] = "btn";
         $data['btn'] = array('title' => 'Add Post', 'url' => 'post/create', 'icon' => 'fas fa-plus');
         $data['post'] = post::all();
         return view('post.index',$data);

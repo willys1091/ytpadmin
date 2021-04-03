@@ -34,10 +34,10 @@ Route::middleware(['auth'])->group(function () {
     Route::Patch('postcategory/{id}' , "PostCategoryController@update");
 
     Route::get('post', "PostController@index");
-    Route::get('post/create', "PostCategoryController@create");
-    Route::post('post' , "PostCategoryController@store");
-    Route::get('post/{id}/edit' , "PostCategoryController@edit");
-    Route::Patch('post/{id}' , "PostCategoryController@update");
+    Route::get('post/create', "PostController@create");
+    Route::post('post' , "PostController@store");
+    Route::get('post/{id}/edit' , "PostController@edit");
+    Route::Patch('post/{id}' , "PostController@update");
 
     Route::get('about', "AboutController@index");
     Route::get('about/create', "AboutController@create");
