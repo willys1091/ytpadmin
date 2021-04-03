@@ -10,59 +10,56 @@
         <div class="col-xl-8 order-xl-0">
             <div class="block block-rounded">
                 <div class="block-content">
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="title " placeholder="Enter Title Here">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="title " placeholder="Enter Title Here">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="js-summernote" name=""></textarea>
+                            </div>
                         </div>
+                    </div>
+                    <div class="block-content block-content-full text-right border-top" >
+                        <button type="button" class="btn btn-alt-primary mr-1" data-dismiss="modal">Close</button>
+                        <button type="submit"  class="btn btn-primary">Save</button> 
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-xl-4 order-xl-1">
-            
             <div class="block block-rounded">
+                <div class="block-header block-header-default">
+                    <h3 class="block-title"><i class="fa fa-fw fa-boxes text-muted mr-1"></i> Moduls</h3>
+                    <div class="block-options">
+                        <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                    </div>
+                </div>
                 <div class="block-content">
-                    <ul class="nav nav-pills flex-column push">
-                        <li class="nav-item mb-1">
-                            <a class="nav-link active d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                                Icons <span class="badge badge-pill badge-secondary ml-1">7k</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-1">
-                            <a class="nav-link d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                                Apps <span class="badge badge-pill badge-secondary ml-1">2k</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-1">
-                            <a class="nav-link d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                                Games <span class="badge badge-pill badge-secondary ml-1">3k</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-1">
-                            <a class="nav-link d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                                Graphics <span class="badge badge-pill badge-secondary ml-1">18k</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-1">
-                            <a class="nav-link d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                                Services <span class="badge badge-pill badge-secondary ml-1">2k</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-1">
-                            <a class="nav-link d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                                UI Kits <span class="badge badge-pill badge-secondary ml-1">12k</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-1">
-                            <a class="nav-link d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                                Themes <span class="badge badge-pill badge-secondary ml-1">6k</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="form-group">
+                        <select class="js-select2 form-control" name="modul" style="width: 100%;" data-placeholder="Choose one..">
+                            <option></option>
+                            @foreach($postcategory as $pc)
+                                <option value="{{$pc->id}}">{{ucfirst($pc->name)}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="block block-rounded">
+                <div class="block-header block-header-default">
+                    <h3 class="block-title"><i class="fa fa-fw fa-media text-muted mr-1"></i> Images</h3>
+                    <div class="block-options">
+                        <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                    </div>
+                </div>
+                <div class="block-content">
+                    @livewire('post-img', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
 </form>
         
@@ -71,12 +68,14 @@
 
 @section ('headerScript')
     @livewireStyles
-    <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/select2/css/select2.min.css')}}">
-    <link rel="stylesheet" id="css-main" href="{{asset('js/plugins/flatpickr/flatpickr.min.css')}}">
+    <link rel="stylesheet" href="{{asset('js/plugins/select2/css/select2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('js/plugins/flatpickr/flatpickr.min.css')}}">
+    <link rel="stylesheet" href="{{asset('js/plugins/summernote/summernote-bs4.css')}}">
 @endsection
 
 @section ('footerScript')
     @livewireScripts
+    <script src="{{asset('js/plugins/summernote/summernote-bs4.min.js')}}"></script>
     <script src="{{asset('js/plugins/select2/js/select2.full.min.js')}}"></script>
     <script src="{{asset('js/siapfulin.js')}}"></script>
     <script src="{{asset('js/plugins/flatpickr/flatpickr.min.js')}}"></script>
@@ -85,7 +84,7 @@
     <script>
         
         jQuery(function () {
-            Siap.helpers([ 'flatpickr', 'maxlength','masked-inputs']);
+            Siap.helpers([ 'summernote','select2']);
         });
     </script>
 @endsection

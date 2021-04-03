@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Session;
 use App\Models\post;
+use App\Models\postcategory;
 
 class PostController extends Controller{
     public function index(){
@@ -17,8 +18,9 @@ class PostController extends Controller{
     }
 
     public function create(){
-        $data['title'] = "Post | Tangan Pengharapan";
+        $data['title'] = "New Post | Tangan Pengharapan";
         $data['action'] = "add";
+        $data['postcategory'] = postcategory::where('active','1')->get();
         return view('post.action',$data);
     }
 
