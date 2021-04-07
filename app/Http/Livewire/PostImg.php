@@ -18,7 +18,7 @@ class PostImg extends Component{
     }
 
     public function updatedImg(){
-        storage::disk('public2')->putFileAs('media/temp/partner/', $this->img , str_replace(" ", "_", $this->img->getClientOriginalName()));
+        storage::disk('public2')->putFileAs('media/temp/post/', $this->img , str_replace(" ", "_", $this->img->getClientOriginalName()));
         $this->imgfilename = str_replace(" ", "_", $this->img->getClientOriginalName());
         $this->imgext = $this->img->extension();
         $this->emit('img',$this->imgfilename);

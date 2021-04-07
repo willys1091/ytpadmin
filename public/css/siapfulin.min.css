@@ -33317,7 +33317,7 @@ a.text-smooth-lighter:hover {
     font-style: normal;
     font-weight: 900;
     font-display: block;
-    src: url("../fonts/fontawesome/ffa-duotone-900.woff2") format("woff2"), url("../fonts/fontawesome/ffa-duotone-900.woff") format("woff"), url("../fonts/fontawesome/ffa-duotone-900.ttf") format("truetype"); }
+    src: url("../fonts/fontawesome/fa-duotone-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-duotone-900.woff") format("woff"), url("../fonts/fontawesome/fa-duotone-900.ttf") format("truetype"); }
 
 .fad,
 .fa-duotone {
@@ -33376,358 +33376,358 @@ a.text-smooth-lighter:hover {
 .fad.fa-0:after, .fa-duotone.fa-0:after {
     content: "\10e089"; }
     
-    .fad.fa-1:after, .fa-duotone.fa-1:after {
+.fad.fa-1:after, .fa-duotone.fa-1:after {
     content: "\10e08a"; }
     
-    .fad.fa-2:after, .fa-duotone.fa-2:after {
+.fad.fa-2:after, .fa-duotone.fa-2:after {
     content: "\10e08b"; }
     
-    .fad.fa-3:after, .fa-duotone.fa-3:after {
+.fad.fa-3:after, .fa-duotone.fa-3:after {
     content: "\10e08c"; }
     
-    .fad.fa-4:after, .fa-duotone.fa-4:after {
+.fad.fa-4:after, .fa-duotone.fa-4:after {
     content: "\10e08d"; }
     
-    .fad.fa-5:after, .fa-duotone.fa-5:after {
+.fad.fa-5:after, .fa-duotone.fa-5:after {
     content: "\10e08e"; }
     
-    .fad.fa-6:after, .fa-duotone.fa-6:after {
+.fad.fa-6:after, .fa-duotone.fa-6:after {
     content: "\10e08f"; }
     
-    .fad.fa-7:after, .fa-duotone.fa-7:after {
+.fad.fa-7:after, .fa-duotone.fa-7:after {
     content: "\10e090"; }
     
-    .fad.fa-8:after, .fa-duotone.fa-8:after {
+.fad.fa-8:after, .fa-duotone.fa-8:after {
     content: "\10e091"; }
     
-    .fad.fa-9:after, .fa-duotone.fa-9:after {
+.fad.fa-9:after, .fa-duotone.fa-9:after {
     content: "\10e092"; }
     
-    .fad.fa-a:after, .fa-duotone.fa-a:after {
+.fad.fa-a:after, .fa-duotone.fa-a:after {
     content: "\10e093"; }
     
-    .fad.fa-abacus:after, .fa-duotone.fa-abacus:after {
+.fad.fa-abacus:after, .fa-duotone.fa-abacus:after {
     content: "\10f640"; }
     
-    .fad.fa-acorn:after, .fa-duotone.fa-acorn:after {
+.fad.fa-acorn:after, .fa-duotone.fa-acorn:after {
     content: "\10f6ae"; }
     
-    .fad.fa-address-book:after, .fa-duotone.fa-address-book:after {
+.fad.fa-address-book:after, .fa-duotone.fa-address-book:after {
     content: "\10f2b9"; }
     
-    .fad.fa-contact-book:after, .fa-duotone.fa-contact-book:after {
+.fad.fa-contact-book:after, .fa-duotone.fa-contact-book:after {
     content: "\10f2b9"; }
     
-    .fad.fa-address-card:after, .fa-duotone.fa-address-card:after {
+.fad.fa-address-card:after, .fa-duotone.fa-address-card:after {
     content: "\10f2bb"; }
     
-    .fad.fa-contact-card:after, .fa-duotone.fa-contact-card:after {
+.fad.fa-contact-card:after, .fa-duotone.fa-contact-card:after {
     content: "\10f2bb"; }
-    
-    .fad.fa-vcard:after, .fa-duotone.fa-vcard:after {
+
+.fad.fa-vcard:after, .fa-duotone.fa-vcard:after {
     content: "\10f2bb"; }
-    
-    .fad.fa-air-conditioner:after, .fa-duotone.fa-air-conditioner:after {
+
+.fad.fa-air-conditioner:after, .fa-duotone.fa-air-conditioner:after {
     content: "\10f8f4"; }
-    
-    .fad.fa-air-freshener:after, .fa-duotone.fa-air-freshener:after {
+
+.fad.fa-air-freshener:after, .fa-duotone.fa-air-freshener:after {
     content: "\10f5d0"; }
-    
-    .fad.fa-airplay:after, .fa-duotone.fa-airplay:after {
+
+.fad.fa-airplay:after, .fa-duotone.fa-airplay:after {
     content: "\10e094"; }
-    
-    .fad.fa-alarm-clock:after, .fa-duotone.fa-alarm-clock:after {
+
+.fad.fa-alarm-clock:after, .fa-duotone.fa-alarm-clock:after {
     content: "\10f34e"; }
-    
-    .fad.fa-alarm-exclamation:after, .fa-duotone.fa-alarm-exclamation:after {
+
+.fad.fa-alarm-exclamation:after, .fa-duotone.fa-alarm-exclamation:after {
     content: "\10f843"; }
-    
-    .fad.fa-alarm-plus:after, .fa-duotone.fa-alarm-plus:after {
+
+.fad.fa-alarm-plus:after, .fa-duotone.fa-alarm-plus:after {
     content: "\10f844"; }
-    
-    .fad.fa-alarm-snooze:after, .fa-duotone.fa-alarm-snooze:after {
+
+.fad.fa-alarm-snooze:after, .fa-duotone.fa-alarm-snooze:after {
     content: "\10f845"; }
-    
-    .fad.fa-album:after, .fa-duotone.fa-album:after {
+
+.fad.fa-album:after, .fa-duotone.fa-album:after {
     content: "\10f89f"; }
-    
-    .fad.fa-album-collection:after, .fa-duotone.fa-album-collection:after {
+
+.fad.fa-album-collection:after, .fa-duotone.fa-album-collection:after {
     content: "\10f8a0"; }
-    
-    .fad.fa-alicorn:after, .fa-duotone.fa-alicorn:after {
+
+.fad.fa-alicorn:after, .fa-duotone.fa-alicorn:after {
     content: "\10f6b0"; }
-    
-    .fad.fa-alien:after, .fa-duotone.fa-alien:after {
+
+.fad.fa-alien:after, .fa-duotone.fa-alien:after {
     content: "\10f8f5"; }
-    
-    .fad.fa-alien-8bit:after, .fa-duotone.fa-alien-8bit:after {
+
+.fad.fa-alien-8bit:after, .fa-duotone.fa-alien-8bit:after {
     content: "\10f8f6"; }
-    
-    .fad.fa-alien-monster:after, .fa-duotone.fa-alien-monster:after {
+
+.fad.fa-alien-monster:after, .fa-duotone.fa-alien-monster:after {
     content: "\10f8f6"; }
-    
-    .fad.fa-align-center:after, .fa-duotone.fa-align-center:after {
+
+.fad.fa-align-center:after, .fa-duotone.fa-align-center:after {
     content: "\10f037"; }
-    
-    .fad.fa-align-justify:after, .fa-duotone.fa-align-justify:after {
+
+.fad.fa-align-justify:after, .fa-duotone.fa-align-justify:after {
     content: "\10f039"; }
-    
-    .fad.fa-align-left:after, .fa-duotone.fa-align-left:after {
+  
+.fad.fa-align-left:after, .fa-duotone.fa-align-left:after {
     content: "\10f036"; }
-    
-    .fad.fa-align-right:after, .fa-duotone.fa-align-right:after {
+
+.fad.fa-align-right:after, .fa-duotone.fa-align-right:after {
     content: "\10f038"; }
-    
-    .fad.fa-align-slash:after, .fa-duotone.fa-align-slash:after {
+
+.fad.fa-align-slash:after, .fa-duotone.fa-align-slash:after {
     content: "\10f846"; }
-    
-    .fad.fa-alt:after, .fa-duotone.fa-alt:after {
+
+.fad.fa-alt:after, .fa-duotone.fa-alt:after {
     content: "\10e095"; }
-    
-    .fad.fa-amp-guitar:after, .fa-duotone.fa-amp-guitar:after {
+
+.fad.fa-amp-guitar:after, .fa-duotone.fa-amp-guitar:after {
     content: "\10f8a1"; }
     
-    .fad.fa-ampersand:after, .fa-duotone.fa-ampersand:after {
+.fad.fa-ampersand:after, .fa-duotone.fa-ampersand:after {
     content: "\10e096"; }
     
-    .fad.fa-anchor:after, .fa-duotone.fa-anchor:after {
+.fad.fa-anchor:after, .fa-duotone.fa-anchor:after {
     content: "\10f13d"; }
-    
-    .fad.fa-angel:after, .fa-duotone.fa-angel:after {
+
+.fad.fa-angel:after, .fa-duotone.fa-angel:after {
     content: "\10f779"; }
-    
-    .fad.fa-angle:after, .fa-duotone.fa-angle:after {
+
+.fad.fa-angle:after, .fa-duotone.fa-angle:after {
     content: "\10e097"; }
-    
-    .fad.fa-angle-90:after, .fa-duotone.fa-angle-90:after {
+
+.fad.fa-angle-90:after, .fa-duotone.fa-angle-90:after {
     content: "\10e098"; }
-    
-    .fad.fa-angle-down:after, .fa-duotone.fa-angle-down:after {
+
+.fad.fa-angle-down:after, .fa-duotone.fa-angle-down:after {
     content: "\10f107"; }
-    
-    .fad.fa-angle-left:after, .fa-duotone.fa-angle-left:after {
+
+.fad.fa-angle-left:after, .fa-duotone.fa-angle-left:after {
     content: "\10f104"; }
-    
-    .fad.fa-angle-right:after, .fa-duotone.fa-angle-right:after {
+
+.fad.fa-angle-right:after, .fa-duotone.fa-angle-right:after {
     content: "\10f105"; }
-    
-    .fad.fa-angle-up:after, .fa-duotone.fa-angle-up:after {
+
+.fad.fa-angle-up:after, .fa-duotone.fa-angle-up:after {
     content: "\10f106"; }
-    
-    .fad.fa-angles-down:after, .fa-duotone.fa-angles-down:after {
+
+.fad.fa-angles-down:after, .fa-duotone.fa-angles-down:after {
     content: "\10f103"; }
-    
-    .fad.fa-angle-double-down:after, .fa-duotone.fa-angle-double-down:after {
+
+.fad.fa-angle-double-down:after, .fa-duotone.fa-angle-double-down:after {
     content: "\10f103"; }
-    
-    .fad.fa-angles-left:after, .fa-duotone.fa-angles-left:after {
+
+.fad.fa-angles-left:after, .fa-duotone.fa-angles-left:after {
     content: "\10f100"; }
-    
-    .fad.fa-angle-double-left:after, .fa-duotone.fa-angle-double-left:after {
+
+.fad.fa-angle-double-left:after, .fa-duotone.fa-angle-double-left:after {
     content: "\10f100"; }
-    
-    .fad.fa-angles-right:after, .fa-duotone.fa-angles-right:after {
+
+.fad.fa-angles-right:after, .fa-duotone.fa-angles-right:after {
     content: "\10f101"; }
-    
-    .fad.fa-angle-double-right:after, .fa-duotone.fa-angle-double-right:after {
+
+.fad.fa-angle-double-right:after, .fa-duotone.fa-angle-double-right:after {
     content: "\10f101"; }
-    
-    .fad.fa-angles-up:after, .fa-duotone.fa-angles-up:after {
+
+.fad.fa-angles-up:after, .fa-duotone.fa-angles-up:after {
     content: "\10f102"; }
-    
-    .fad.fa-angle-double-up:after, .fa-duotone.fa-angle-double-up:after {
+
+.fad.fa-angle-double-up:after, .fa-duotone.fa-angle-double-up:after {
     content: "\10f102"; }
-    
-    .fad.fa-ankh:after, .fa-duotone.fa-ankh:after {
+
+.fad.fa-ankh:after, .fa-duotone.fa-ankh:after {
     content: "\10f644"; }
-    
-    .fad.fa-aperture:after, .fa-duotone.fa-aperture:after {
+
+.fad.fa-aperture:after, .fa-duotone.fa-aperture:after {
     content: "\10e099"; }
-    
-    .fad.fa-apple-core:after, .fa-duotone.fa-apple-core:after {
+
+.fad.fa-apple-core:after, .fa-duotone.fa-apple-core:after {
     content: "\10e09a"; }
-    
-    .fad.fa-apple-crate:after, .fa-duotone.fa-apple-crate:after {
+
+.fad.fa-apple-crate:after, .fa-duotone.fa-apple-crate:after {
     content: "\10f6b1"; }
-    
-    .fad.fa-apple-whole:after, .fa-duotone.fa-apple-whole:after {
+
+.fad.fa-apple-whole:after, .fa-duotone.fa-apple-whole:after {
     content: "\10f5d1"; }
-    
-    .fad.fa-apple-alt:after, .fa-duotone.fa-apple-alt:after {
+
+.fad.fa-apple-alt:after, .fa-duotone.fa-apple-alt:after {
     content: "\10f5d1"; }
-    
-    .fad.fa-archway:after, .fa-duotone.fa-archway:after {
+
+.fad.fa-archway:after, .fa-duotone.fa-archway:after {
     content: "\10f557"; }
-    
-    .fad.fa-arrow-down:after, .fa-duotone.fa-arrow-down:after {
+
+.fad.fa-arrow-down:after, .fa-duotone.fa-arrow-down:after {
     content: "\10f063"; }
-    
-    .fad.fa-arrow-down-1-9:after, .fa-duotone.fa-arrow-down-1-9:after {
+
+.fad.fa-arrow-down-1-9:after, .fa-duotone.fa-arrow-down-1-9:after {
     content: "\10f162"; }
-    
-    .fad.fa-sort-numeric-down:after, .fa-duotone.fa-sort-numeric-down:after {
+
+.fad.fa-sort-numeric-down:after, .fa-duotone.fa-sort-numeric-down:after {
     content: "\10f162"; }
-    
-    .fad.fa-sort-numeric-asc:after, .fa-duotone.fa-sort-numeric-asc:after {
+
+.fad.fa-sort-numeric-asc:after, .fa-duotone.fa-sort-numeric-asc:after {
     content: "\10f162"; }
-    
-    .fad.fa-arrow-down-9-1:after, .fa-duotone.fa-arrow-down-9-1:after {
+
+.fad.fa-arrow-down-9-1:after, .fa-duotone.fa-arrow-down-9-1:after {
     content: "\10f886"; }
-    
-    .fad.fa-sort-numeric-down-alt:after, .fa-duotone.fa-sort-numeric-down-alt:after {
+
+.fad.fa-sort-numeric-down-alt:after, .fa-duotone.fa-sort-numeric-down-alt:after {
     content: "\10f886"; }
-    
-    .fad.fa-sort-numeric-desc:after, .fa-duotone.fa-sort-numeric-desc:after {
+
+.fad.fa-sort-numeric-desc:after, .fa-duotone.fa-sort-numeric-desc:after {
     content: "\10f886"; }
-    
-    .fad.fa-arrow-down-a-z:after, .fa-duotone.fa-arrow-down-a-z:after {
+
+.fad.fa-arrow-down-a-z:after, .fa-duotone.fa-arrow-down-a-z:after {
     content: "\10f15d"; }
-    
-    .fad.fa-sort-alpha-down:after, .fa-duotone.fa-sort-alpha-down:after {
+
+.fad.fa-sort-alpha-down:after, .fa-duotone.fa-sort-alpha-down:after {
     content: "\10f15d"; }
-    
-    .fad.fa-sort-alpha-asc:after, .fa-duotone.fa-sort-alpha-asc:after {
+
+.fad.fa-sort-alpha-asc:after, .fa-duotone.fa-sort-alpha-asc:after {
     content: "\10f15d"; }
-    
-    .fad.fa-arrow-down-arrow-up:after, .fa-duotone.fa-arrow-down-arrow-up:after {
+
+.fad.fa-arrow-down-arrow-up:after, .fa-duotone.fa-arrow-down-arrow-up:after {
     content: "\10f883"; }
-    
-    .fad.fa-sort-alt:after, .fa-duotone.fa-sort-alt:after {
+
+.fad.fa-sort-alt:after, .fa-duotone.fa-sort-alt:after {
     content: "\10f883"; }
-    
-    .fad.fa-arrow-down-big-small:after, .fa-duotone.fa-arrow-down-big-small:after {
+
+.fad.fa-arrow-down-big-small:after, .fa-duotone.fa-arrow-down-big-small:after {
     content: "\10f88c"; }
-    
-    .fad.fa-sort-size-down:after, .fa-duotone.fa-sort-size-down:after {
+
+.fad.fa-sort-size-down:after, .fa-duotone.fa-sort-size-down:after {
     content: "\10f88c"; }
-    
-    .fad.fa-arrow-down-from-dotted-line:after, .fa-duotone.fa-arrow-down-from-dotted-line:after {
+
+.fad.fa-arrow-down-from-dotted-line:after, .fa-duotone.fa-arrow-down-from-dotted-line:after {
     content: "\10e09b"; }
-    
-    .fad.fa-arrow-down-from-line:after, .fa-duotone.fa-arrow-down-from-line:after {
+
+.fad.fa-arrow-down-from-line:after, .fa-duotone.fa-arrow-down-from-line:after {
     content: "\10f345"; }
-    
-    .fad.fa-arrow-from-top:after, .fa-duotone.fa-arrow-from-top:after {
+
+.fad.fa-arrow-from-top:after, .fa-duotone.fa-arrow-from-top:after {
     content: "\10f345"; }
-    
-    .fad.fa-arrow-down-left:after, .fa-duotone.fa-arrow-down-left:after {
+
+.fad.fa-arrow-down-left:after, .fa-duotone.fa-arrow-down-left:after {
     content: "\10e09c"; }
-    
-    .fad.fa-arrow-down-left-and-arrow-up-right-to-center:after, .fa-duotone.fa-arrow-down-left-and-arrow-up-right-to-center:after {
+
+.fad.fa-arrow-down-left-and-arrow-up-right-to-center:after, .fa-duotone.fa-arrow-down-left-and-arrow-up-right-to-center:after {
     content: "\10e09d"; }
-    
-    .fad.fa-arrow-down-long:after, .fa-duotone.fa-arrow-down-long:after {
+
+.fad.fa-arrow-down-long:after, .fa-duotone.fa-arrow-down-long:after {
     content: "\10f175"; }
-    
-    .fad.fa-long-arrow-down:after, .fa-duotone.fa-long-arrow-down:after {
+
+.fad.fa-long-arrow-down:after, .fa-duotone.fa-long-arrow-down:after {
     content: "\10f175"; }
-    
-    .fad.fa-arrow-down-right:after, .fa-duotone.fa-arrow-down-right:after {
+
+.fad.fa-arrow-down-right:after, .fa-duotone.fa-arrow-down-right:after {
     content: "\10e09e"; }
-    
-    .fad.fa-arrow-down-short-wide:after, .fa-duotone.fa-arrow-down-short-wide:after {
+
+.fad.fa-arrow-down-short-wide:after, .fa-duotone.fa-arrow-down-short-wide:after {
     content: "\10f884"; }
-    
-    .fad.fa-sort-amount-down-alt:after, .fa-duotone.fa-sort-amount-down-alt:after {
+
+.fad.fa-sort-amount-down-alt:after, .fa-duotone.fa-sort-amount-down-alt:after {
     content: "\10f884"; }
-    
-    .fad.fa-sort-amount-desc:after, .fa-duotone.fa-sort-amount-desc:after {
+
+.fad.fa-sort-amount-desc:after, .fa-duotone.fa-sort-amount-desc:after {
     content: "\10f884"; }
-    
-    .fad.fa-arrow-down-small-big:after, .fa-duotone.fa-arrow-down-small-big:after {
+
+.fad.fa-arrow-down-small-big:after, .fa-duotone.fa-arrow-down-small-big:after {
     content: "\10f88d"; }
-    
-    .fad.fa-sort-size-down-alt:after, .fa-duotone.fa-sort-size-down-alt:after {
+
+.fad.fa-sort-size-down-alt:after, .fa-duotone.fa-sort-size-down-alt:after {
     content: "\10f88d"; }
-    
-    .fad.fa-arrow-down-square-triangle:after, .fa-duotone.fa-arrow-down-square-triangle:after {
+
+.fad.fa-arrow-down-square-triangle:after, .fa-duotone.fa-arrow-down-square-triangle:after {
     content: "\10f889"; }
-    
-    .fad.fa-sort-shapes-down-alt:after, .fa-duotone.fa-sort-shapes-down-alt:after {
+
+.fad.fa-sort-shapes-down-alt:after, .fa-duotone.fa-sort-shapes-down-alt:after {
     content: "\10f889"; }
-    
-    .fad.fa-arrow-down-to-bracket:after, .fa-duotone.fa-arrow-down-to-bracket:after {
+
+.fad.fa-arrow-down-to-bracket:after, .fa-duotone.fa-arrow-down-to-bracket:after {
     content: "\10e09f"; }
-    
-    .fad.fa-arrow-down-to-dotted-line:after, .fa-duotone.fa-arrow-down-to-dotted-line:after {
+
+.fad.fa-arrow-down-to-dotted-line:after, .fa-duotone.fa-arrow-down-to-dotted-line:after {
     content: "\10e0a0"; }
-    
-    .fad.fa-arrow-down-to-line:after, .fa-duotone.fa-arrow-down-to-line:after {
+
+.fad.fa-arrow-down-to-line:after, .fa-duotone.fa-arrow-down-to-line:after {
     content: "\10f33d"; }
-    
-    .fad.fa-arrow-to-bottom:after, .fa-duotone.fa-arrow-to-bottom:after {
+
+.fad.fa-arrow-to-bottom:after, .fa-duotone.fa-arrow-to-bottom:after {
     content: "\10f33d"; }
-    
-    .fad.fa-arrow-down-to-square:after, .fa-duotone.fa-arrow-down-to-square:after {
+
+.fad.fa-arrow-down-to-square:after, .fa-duotone.fa-arrow-down-to-square:after {
     content: "\10e0a1"; }
     
-    .fad.fa-arrow-down-triangle-square:after, .fa-duotone.fa-arrow-down-triangle-square:after {
+.fad.fa-arrow-down-triangle-square:after, .fa-duotone.fa-arrow-down-triangle-square:after {
     content: "\10f888"; }
     
-    .fad.fa-sort-shapes-down:after, .fa-duotone.fa-sort-shapes-down:after {
+.fad.fa-sort-shapes-down:after, .fa-duotone.fa-sort-shapes-down:after {
     content: "\10f888"; }
     
-    .fad.fa-arrow-down-wide-short:after, .fa-duotone.fa-arrow-down-wide-short:after {
+.fad.fa-arrow-down-wide-short:after, .fa-duotone.fa-arrow-down-wide-short:after {
     content: "\10f160"; }
     
-    .fad.fa-sort-amount-down:after, .fa-duotone.fa-sort-amount-down:after {
+.fad.fa-sort-amount-down:after, .fa-duotone.fa-sort-amount-down:after {
     content: "\10f160"; }
     
-    .fad.fa-sort-amount-asc:after, .fa-duotone.fa-sort-amount-asc:after {
+.fad.fa-sort-amount-asc:after, .fa-duotone.fa-sort-amount-asc:after {
     content: "\10f160"; }
     
-    .fad.fa-arrow-down-z-a:after, .fa-duotone.fa-arrow-down-z-a:after {
+.fad.fa-arrow-down-z-a:after, .fa-duotone.fa-arrow-down-z-a:after {
     content: "\10f881"; }
     
-    .fad.fa-sort-alpha-down-alt:after, .fa-duotone.fa-sort-alpha-down-alt:after {
+.fad.fa-sort-alpha-down-alt:after, .fa-duotone.fa-sort-alpha-down-alt:after {
     content: "\10f881"; }
     
-    .fad.fa-sort-alpha-desc:after, .fa-duotone.fa-sort-alpha-desc:after {
+.fad.fa-sort-alpha-desc:after, .fa-duotone.fa-sort-alpha-desc:after {
     content: "\10f881"; }
     
-    .fad.fa-arrow-left:after, .fa-duotone.fa-arrow-left:after {
+.fad.fa-arrow-left:after, .fa-duotone.fa-arrow-left:after {
     content: "\10f060"; }
     
-    .fad.fa-arrow-left-from-line:after, .fa-duotone.fa-arrow-left-from-line:after {
+.fad.fa-arrow-left-from-line:after, .fa-duotone.fa-arrow-left-from-line:after {
     content: "\10f344"; }
     
-    .fad.fa-arrow-from-right:after, .fa-duotone.fa-arrow-from-right:after {
+.fad.fa-arrow-from-right:after, .fa-duotone.fa-arrow-from-right:after {
     content: "\10f344"; }
     
-    .fad.fa-arrow-left-long:after, .fa-duotone.fa-arrow-left-long:after {
+.fad.fa-arrow-left-long:after, .fa-duotone.fa-arrow-left-long:after {
     content: "\10f177"; }
     
-    .fad.fa-long-arrow-left:after, .fa-duotone.fa-long-arrow-left:after {
+.fad.fa-long-arrow-left:after, .fa-duotone.fa-long-arrow-left:after {
     content: "\10f177"; }
     
-    .fad.fa-arrow-left-rotate:after, .fa-duotone.fa-arrow-left-rotate:after {
+.fad.fa-arrow-left-rotate:after, .fa-duotone.fa-arrow-left-rotate:after {
     content: "\10f0e2"; }
     
-    .fad.fa-undo:after, .fa-duotone.fa-undo:after {
+.fad.fa-undo:after, .fa-duotone.fa-undo:after {
     content: "\10f0e2"; }
     
-    .fad.fa-arrow-rotate-left:after, .fa-duotone.fa-arrow-rotate-left:after {
+.fad.fa-arrow-rotate-left:after, .fa-duotone.fa-arrow-rotate-left:after {
     content: "\10f0e2"; }
     
-    .fad.fa-arrow-left-to-line:after, .fa-duotone.fa-arrow-left-to-line:after {
+.fad.fa-arrow-left-to-line:after, .fa-duotone.fa-arrow-left-to-line:after {
     content: "\10f33e"; }
     
-    .fad.fa-arrow-to-left:after, .fa-duotone.fa-arrow-to-left:after {
+.fad.fa-arrow-to-left:after, .fa-duotone.fa-arrow-to-left:after {
     content: "\10f33e"; }
     
-    .fad.fa-arrow-pointer:after, .fa-duotone.fa-arrow-pointer:after {
+.fad.fa-arrow-pointer:after, .fa-duotone.fa-arrow-pointer:after {
     content: "\10f245"; }
     
-    .fad.fa-mouse-pointer:after, .fa-duotone.fa-mouse-pointer:after {
+.fad.fa-mouse-pointer:after, .fa-duotone.fa-mouse-pointer:after {
     content: "\10f245"; }
     
-    .fad.fa-arrow-right:after, .fa-duotone.fa-arrow-right:after {
+.fad.fa-arrow-right:after, .fa-duotone.fa-arrow-right:after {
     content: "\10f061"; }
     
-    .fad.fa-arrow-right-arrow-left:after, .fa-duotone.fa-arrow-right-arrow-left:after {
+.fad.fa-arrow-right-arrow-left:after, .fa-duotone.fa-arrow-right-arrow-left:after {
     content: "\10f0ec"; }
     
-    .fad.fa-exchange:after, .fa-duotone.fa-exchange:after {
+.fad.fa-exchange:after, .fa-duotone.fa-exchange:after {
     content: "\10f0ec"; }
     
     .fad.fa-arrow-right-from-bracket:after, .fa-duotone.fa-arrow-right-from-bracket:after {
@@ -43195,166 +43195,166 @@ a.text-smooth-lighter:hover {
     .fad.fa-weight:after, .fa-duotone.fa-weight:after {
     content: "\10f496"; }
     
-    .fad.fa-whale:after, .fa-duotone.fa-whale:after {
-    content: "\10f72c"; }
-    
-    .fad.fa-wheat:after, .fa-duotone.fa-wheat:after {
-    content: "\10f72d"; }
-    
-    .fad.fa-wheat-awn:after, .fa-duotone.fa-wheat-awn:after {
-    content: "\10e2c9"; }
-    
-    .fad.fa-wheat-alt:after, .fa-duotone.fa-wheat-alt:after {
-    content: "\10e2c9"; }
-    
-    .fad.fa-wheelchair:after, .fa-duotone.fa-wheelchair:after {
-    content: "\10f193"; }
-    
-    .fad.fa-wheelchair-move:after, .fa-duotone.fa-wheelchair-move:after {
-    content: "\10e2ca"; }
-    
-    .fad.fa-wheelchair-alt:after, .fa-duotone.fa-wheelchair-alt:after {
-    content: "\10e2ca"; }
-    
-    .fad.fa-whiskey-glass:after, .fa-duotone.fa-whiskey-glass:after {
-    content: "\10f7a0"; }
-    
-    .fad.fa-glass-whiskey:after, .fa-duotone.fa-glass-whiskey:after {
-    content: "\10f7a0"; }
-    
-    .fad.fa-whiskey-glass-ice:after, .fa-duotone.fa-whiskey-glass-ice:after {
-    content: "\10f7a1"; }
-    
-    .fad.fa-glass-whiskey-rocks:after, .fa-duotone.fa-glass-whiskey-rocks:after {
-    content: "\10f7a1"; }
-    
-    .fad.fa-whistle:after, .fa-duotone.fa-whistle:after {
-    content: "\10f460"; }
-    
-    .fad.fa-wifi:after, .fa-duotone.fa-wifi:after {
-    content: "\10f1eb"; }
-    
-    .fad.fa-wifi-strong:after, .fa-duotone.fa-wifi-strong:after {
-    content: "\10f1eb"; }
-    
-    .fad.fa-wifi-3:after, .fa-duotone.fa-wifi-3:after {
-    content: "\10f1eb"; }
-    
-    .fad.fa-wifi-exclamation:after, .fa-duotone.fa-wifi-exclamation:after {
-    content: "\10e2cb"; }
-    
-    .fad.fa-wifi-fair:after, .fa-duotone.fa-wifi-fair:after {
-    content: "\10f6ab"; }
-    
-    .fad.fa-wifi-2:after, .fa-duotone.fa-wifi-2:after {
-    content: "\10f6ab"; }
-    
-    .fad.fa-wifi-slash:after, .fa-duotone.fa-wifi-slash:after {
-    content: "\10f6ac"; }
-    
-    .fad.fa-wifi-weak:after, .fa-duotone.fa-wifi-weak:after {
-    content: "\10f6aa"; }
-    
-    .fad.fa-wifi-1:after, .fa-duotone.fa-wifi-1:after {
-    content: "\10f6aa"; }
-    
-    .fad.fa-wind:after, .fa-duotone.fa-wind:after {
-    content: "\10f72e"; }
-    
-    .fad.fa-wind-turbine:after, .fa-duotone.fa-wind-turbine:after {
-    content: "\10f89b"; }
-    
-    .fad.fa-wind-warning:after, .fa-duotone.fa-wind-warning:after {
-    content: "\10f776"; }
-    
-    .fad.fa-wind-circle-exclamation:after, .fa-duotone.fa-wind-circle-exclamation:after {
-    content: "\10f776"; }
-    
-    .fad.fa-window:after, .fa-duotone.fa-window:after {
-    content: "\10f40e"; }
-    
-    .fad.fa-window-flip:after, .fa-duotone.fa-window-flip:after {
-    content: "\10f40f"; }
-    
-    .fad.fa-window-alt:after, .fa-duotone.fa-window-alt:after {
-    content: "\10f40f"; }
-    
-    .fad.fa-window-frame:after, .fa-duotone.fa-window-frame:after {
-    content: "\10e04f"; }
-    
-    .fad.fa-window-frame-open:after, .fa-duotone.fa-window-frame-open:after {
-    content: "\10e050"; }
-    
-    .fad.fa-window-maximize:after, .fa-duotone.fa-window-maximize:after {
-    content: "\10f2d0"; }
-    
-    .fad.fa-window-minimize:after, .fa-duotone.fa-window-minimize:after {
-    content: "\10f2d1"; }
-    
-    .fad.fa-window-restore:after, .fa-duotone.fa-window-restore:after {
-    content: "\10f2d2"; }
-    
-    .fad.fa-windsock:after, .fa-duotone.fa-windsock:after {
-    content: "\10f777"; }
-    
-    .fad.fa-wine-bottle:after, .fa-duotone.fa-wine-bottle:after {
-    content: "\10f72f"; }
-    
-    .fad.fa-wine-glass:after, .fa-duotone.fa-wine-glass:after {
-    content: "\10f4e3"; }
-    
-    .fad.fa-wine-glass-crack:after, .fa-duotone.fa-wine-glass-crack:after {
-    content: "\10f4bb"; }
-    
-    .fad.fa-fragile:after, .fa-duotone.fa-fragile:after {
-    content: "\10f4bb"; }
-    
-    .fad.fa-wine-glass-empty:after, .fa-duotone.fa-wine-glass-empty:after {
-    content: "\10f5ce"; }
-    
-    .fad.fa-wine-glass-alt:after, .fa-duotone.fa-wine-glass-alt:after {
-    content: "\10f5ce"; }
-    
-    .fad.fa-won-sign:after, .fa-duotone.fa-won-sign:after {
-    content: "\10f159"; }
-    
-    .fad.fa-won:after, .fa-duotone.fa-won:after {
-    content: "\10f159"; }
-    
-    .fad.fa-krw:after, .fa-duotone.fa-krw:after {
-    content: "\10f159"; }
-    
-    .fad.fa-wreath:after, .fa-duotone.fa-wreath:after {
+.fad.fa-whale:after, .fa-duotone.fa-whale:after {
+content: "\10f72c"; }
+
+.fad.fa-wheat:after, .fa-duotone.fa-wheat:after {
+content: "\10f72d"; }
+
+.fad.fa-wheat-awn:after, .fa-duotone.fa-wheat-awn:after {
+content: "\10e2c9"; }
+
+.fad.fa-wheat-alt:after, .fa-duotone.fa-wheat-alt:after {
+content: "\10e2c9"; }
+
+.fad.fa-wheelchair:after, .fa-duotone.fa-wheelchair:after {
+content: "\10f193"; }
+
+.fad.fa-wheelchair-move:after, .fa-duotone.fa-wheelchair-move:after {
+content: "\10e2ca"; }
+
+.fad.fa-wheelchair-alt:after, .fa-duotone.fa-wheelchair-alt:after {
+content: "\10e2ca"; }
+
+.fad.fa-whiskey-glass:after, .fa-duotone.fa-whiskey-glass:after {
+content: "\10f7a0"; }
+
+.fad.fa-glass-whiskey:after, .fa-duotone.fa-glass-whiskey:after {
+content: "\10f7a0"; }
+
+.fad.fa-whiskey-glass-ice:after, .fa-duotone.fa-whiskey-glass-ice:after {
+content: "\10f7a1"; }
+
+.fad.fa-glass-whiskey-rocks:after, .fa-duotone.fa-glass-whiskey-rocks:after {
+content: "\10f7a1"; }
+
+.fad.fa-whistle:after, .fa-duotone.fa-whistle:after {
+content: "\10f460"; }
+
+.fad.fa-wifi:after, .fa-duotone.fa-wifi:after {
+content: "\10f1eb"; }
+
+.fad.fa-wifi-strong:after, .fa-duotone.fa-wifi-strong:after {
+content: "\10f1eb"; }
+
+.fad.fa-wifi-3:after, .fa-duotone.fa-wifi-3:after {
+content: "\10f1eb"; }
+
+.fad.fa-wifi-exclamation:after, .fa-duotone.fa-wifi-exclamation:after {
+content: "\10e2cb"; }
+
+.fad.fa-wifi-fair:after, .fa-duotone.fa-wifi-fair:after {
+content: "\10f6ab"; }
+
+.fad.fa-wifi-2:after, .fa-duotone.fa-wifi-2:after {
+content: "\10f6ab"; }
+
+.fad.fa-wifi-slash:after, .fa-duotone.fa-wifi-slash:after {
+content: "\10f6ac"; }
+
+.fad.fa-wifi-weak:after, .fa-duotone.fa-wifi-weak:after {
+content: "\10f6aa"; }
+
+.fad.fa-wifi-1:after, .fa-duotone.fa-wifi-1:after {
+content: "\10f6aa"; }
+
+.fad.fa-wind:after, .fa-duotone.fa-wind:after {
+content: "\10f72e"; }
+
+.fad.fa-wind-turbine:after, .fa-duotone.fa-wind-turbine:after {
+content: "\10f89b"; }
+
+.fad.fa-wind-warning:after, .fa-duotone.fa-wind-warning:after {
+content: "\10f776"; }
+
+.fad.fa-wind-circle-exclamation:after, .fa-duotone.fa-wind-circle-exclamation:after {
+content: "\10f776"; }
+
+.fad.fa-window:after, .fa-duotone.fa-window:after {
+content: "\10f40e"; }
+
+.fad.fa-window-flip:after, .fa-duotone.fa-window-flip:after {
+content: "\10f40f"; }
+
+.fad.fa-window-alt:after, .fa-duotone.fa-window-alt:after {
+content: "\10f40f"; }
+
+.fad.fa-window-frame:after, .fa-duotone.fa-window-frame:after {
+content: "\10e04f"; }
+
+.fad.fa-window-frame-open:after, .fa-duotone.fa-window-frame-open:after {
+content: "\10e050"; }
+
+.fad.fa-window-maximize:after, .fa-duotone.fa-window-maximize:after {
+content: "\10f2d0"; }
+
+.fad.fa-window-minimize:after, .fa-duotone.fa-window-minimize:after {
+content: "\10f2d1"; }
+
+.fad.fa-window-restore:after, .fa-duotone.fa-window-restore:after {
+content: "\10f2d2"; }
+
+.fad.fa-windsock:after, .fa-duotone.fa-windsock:after {
+content: "\10f777"; }
+
+.fad.fa-wine-bottle:after, .fa-duotone.fa-wine-bottle:after {
+content: "\10f72f"; }
+
+.fad.fa-wine-glass:after, .fa-duotone.fa-wine-glass:after {
+content: "\10f4e3"; }
+
+.fad.fa-wine-glass-crack:after, .fa-duotone.fa-wine-glass-crack:after {
+content: "\10f4bb"; }
+
+.fad.fa-fragile:after, .fa-duotone.fa-fragile:after {
+content: "\10f4bb"; }
+
+.fad.fa-wine-glass-empty:after, .fa-duotone.fa-wine-glass-empty:after {
+content: "\10f5ce"; }
+
+.fad.fa-wine-glass-alt:after, .fa-duotone.fa-wine-glass-alt:after {
+content: "\10f5ce"; }
+
+.fad.fa-won-sign:after, .fa-duotone.fa-won-sign:after {
+content: "\10f159"; }
+
+.fad.fa-won:after, .fa-duotone.fa-won:after {
+content: "\10f159"; }
+
+.fad.fa-krw:after, .fa-duotone.fa-krw:after {
+content: "\10f159"; }
+
+.fad.fa-wreath:after, .fa-duotone.fa-wreath:after {
     content: "\10f7e2"; }
-    
-    .fad.fa-wrench:after, .fa-duotone.fa-wrench:after {
+
+.fad.fa-wrench:after, .fa-duotone.fa-wrench:after {
     content: "\10f0ad"; }
-    
-    .fad.fa-wrench-simple:after, .fa-duotone.fa-wrench-simple:after {
+
+.fad.fa-wrench-simple:after, .fa-duotone.fa-wrench-simple:after {
     content: "\10e2cc"; }
-    
-    .fad.fa-x:after, .fa-duotone.fa-x:after {
+
+.fad.fa-x:after, .fa-duotone.fa-x:after {
     content: "\10e2cd"; }
-    
-    .fad.fa-x-ray:after, .fa-duotone.fa-x-ray:after {
+
+.fad.fa-x-ray:after, .fa-duotone.fa-x-ray:after {
     content: "\10f497"; }
-    
-    .fad.fa-xmark:after, .fa-duotone.fa-xmark:after {
+
+.fad.fa-xmark:after, .fa-duotone.fa-xmark:after {
     content: "\10f00d"; }
-    
-    .fad.fa-multiply:after, .fa-duotone.fa-multiply:after {
+
+.fad.fa-multiply:after, .fa-duotone.fa-multiply:after {
     content: "\10f00d"; }
-    
-    .fad.fa-times:after, .fa-duotone.fa-times:after {
+
+.fad.fa-times:after, .fa-duotone.fa-times:after {
     content: "\10f00d"; }
-    
-    .fad.fa-close:after, .fa-duotone.fa-close:after {
+
+.fad.fa-close:after, .fa-duotone.fa-close:after {
     content: "\10f00d"; }
-    
-    .fad.fa-remove:after, .fa-duotone.fa-remove:after {
+
+.fad.fa-remove:after, .fa-duotone.fa-remove:after {
     content: "\10f00d"; }
-    
-    .fad.fa-xmark-to-slot:after, .fa-duotone.fa-xmark-to-slot:after {
+
+.fad.fa-xmark-to-slot:after, .fa-duotone.fa-xmark-to-slot:after {
     content: "\10f771"; }
     
 .fad.fa-times-to-slot:after, .fa-duotone.fa-times-to-slot:after {

@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="title " placeholder="Enter Title Here">
+                                <input type="text" class="form-control" name="title " placeholder="Enter Title Here" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <textarea class="js-summernote" name=""></textarea>
