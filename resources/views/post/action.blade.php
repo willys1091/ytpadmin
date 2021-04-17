@@ -55,6 +55,7 @@
                 </div>
                 <div class="block-content">
                     @livewire('post-img', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
+                    @livewire('post-preview', ['action' => $action,'dataimg' =>$data->img??0,'dataid' =>$data->id??0])
                 </div>
             </div>
         </div>
