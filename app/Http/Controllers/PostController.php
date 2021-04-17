@@ -25,9 +25,14 @@ class PostController extends Controller{
     }
 
     public function store(Request $request){
-        $chairity = new post();
-        $chairity->name = $request->name;
-        $chairity->save();
+        $post = new post();
+        $post->title = $request->title;
+        $post->content = $request->content;
+        $post->modul = $request->modul;
+        $post->img = $request->newid.".".$request->imgext;
+        $post->save();
+        storage::disk('public3')->putFileAs('img/post/', asset('media/temp/post/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
+        storage::disk('public2')->delete('media/temp/post/'.$request->imgfilename);
         session::flash('error','success');
         session::flash('message','Add Post Successfull');
         return redirect('post');
