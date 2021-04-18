@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use File;
 use Session;
 use App\Models\post;
 use App\Models\postcategory;
@@ -30,6 +32,7 @@ class PostController extends Controller{
         $post->content = $request->content;
         $post->modul = $request->modul;
         $post->img = $request->newid.".".$request->imgext;
+        $post->status = "Publish";
         $post->save();
         storage::disk('public3')->putFileAs('img/post/', asset('media/temp/post/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
         storage::disk('public2')->delete('media/temp/post/'.$request->imgfilename);

@@ -9,7 +9,7 @@
                         <th class="text-center">ID</th>
                         <th class="text-center">Title</th>
                         <th class="text-center">Modul</th>
-                        <th class="text-center">Parent</th>
+                        <th class="text-center">Status</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -20,12 +20,11 @@
                         <td class="text-center font-size-sm">{{$x}}</td>
                         <td class="text-center font-size-sm">{{$p->title}}</td>
                         <td class="text-center font-size-sm">{{$p->modul}}</td>
-                        <td class="text-center font-size-sm">{{$p->parent}}</td>
+                        <td class="text-center font-size-sm">{{$p->status}}</td>
                         <td class="text-center">
-                            @livewire('active', ['status' => $p->active,'modul'=> 'post','key'=> $p->id])
                             <a onClick='showM("{{url('post/'.$p->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
                         </td>
-                    </tr> 
+                    </tr>
                     @php $x++ @endphp
                     @endforeach
                 </tbody>

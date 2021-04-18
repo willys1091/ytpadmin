@@ -15,7 +15,7 @@ class CreatePost extends Migration{
             $table->string('img_position')->nullable();
             $table->text('content')->nullable();
             $table->string('parent')->nullable();
-            $table->string('status')->default(1);
+            $table->string('status');
             $table->timestamps();
         });
     }

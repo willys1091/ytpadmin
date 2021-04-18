@@ -45,6 +45,7 @@ class Active extends Component{
         $data->active = $status2;
         $data->save();
     }
+    
     public function render(){
         return view('livewire.active');
     }
