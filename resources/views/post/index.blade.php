@@ -19,10 +19,10 @@
                     <tr>
                         <td class="text-center font-size-sm">{{$x}}</td>
                         <td class="text-center font-size-sm">{{$p->title}}</td>
-                        <td class="text-center font-size-sm">{{$p->modul}}</td>
+                        <td class="text-center font-size-sm">{{ucfirst($p->postcategory->name)}}</td>
                         <td class="text-center font-size-sm">{{$p->status}}</td>
                         <td class="text-center">
-                            <a onClick='showM("{{url('post/'.$p->id.'/edit')}}");return false' type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
+                            <a href="{{url('post/'.$p->id.'/edit')}}" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Edit"><i class="fas fa-fw fa-pencil-alt"></i></a>
                         </td>
                     </tr>
                     @php $x++ @endphp

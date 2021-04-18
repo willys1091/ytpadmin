@@ -13,11 +13,11 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="title" placeholder="Enter Title Here" autocomplete="off">
+                                <input type="text" class="form-control" name="title" placeholder="Enter Title Here" autocomplete="off" value="{{$action=='edit'?$data->title:''}}">
                             </div>
-                            
+
                             <div class="form-group">
-                                <textarea class="js-summernote" name="content"></textarea>
+                                <textarea class="js-summernote" name="content">{{$action=='edit'?$data->content:''}}</textarea>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                         <select class="js-select2 form-control" name="modul" style="width: 100%;" data-placeholder="Choose one..">
                             <option></option>
                             @foreach($postcategory as $pc)
-                                <option value="{{$pc->id}}">{{ucfirst($pc->name)}}</option>
+                                <option {{$action=='edit'?$data->modul==$pc->id?'selected':'':''}} value="{{$pc->id}}">{{ucfirst($pc->name)}}</option>
                             @endforeach
                         </select>
                     </div>

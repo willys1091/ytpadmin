@@ -31,11 +31,13 @@ class PostController extends Controller{
         $post->title = $request->title;
         $post->content = $request->content;
         $post->modul = $request->modul;
-        $post->img = $request->newid.".".$request->imgext;
+        $request->userfile <> "" ?$post->img = $request->newid.".".$request->imgext:"";
         $post->status = "Publish";
         $post->save();
-        storage::disk('public3')->putFileAs('img/post/', asset('media/temp/post/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
-        storage::disk('public2')->delete('media/temp/post/'.$request->imgfilename);
+        if($request->userfile <> ""){
+            storage::disk('public3')->putFileAs('img/post/', asset('media/temp/post/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
+            storage::disk('public2')->delete('media/temp/post/'.$request->imgfilename);
+        }
         session::flash('error','success');
         session::flash('message','Add Post Successfull');
         return redirect('post');
@@ -48,13 +50,22 @@ class PostController extends Controller{
         $data['title'] = "Post | Tangan Pengharapan";
         $data['action'] = "edit";
         $data['data'] = post::findorfail($id);
+        $data['postcategory'] = postcategory::where('active','1')->get();
         return view('post.action',$data);
     }
 
     public function update(Request $request, $id){
-        $chairity = chairity::findorfail($id);
-        $chairity->name = $request->name;
-        $chairity->save();
+        $post = post::findorfail($id);
+        $post->title = $request->title;
+        $post->content = $request->content;
+        $post->modul = $request->modul;
+        $request->userfile <> "" ?$post->img = $request->newid.".".$request->imgext:"";
+        $post->status = "Publish";
+        $post->save();
+        if($request->userfile <> ""){
+            storage::disk('public3')->putFileAs('img/post/', asset('media/temp/post/'.$request->imgfilename) , $request->newid.'.'.$request->imgext);
+            storage::disk('public2')->delete('media/temp/post/'.$request->imgfilename);
+        }
         session::flash('error','success');
         session::flash('message','Edit Post Successfull');
         return redirect('post');
