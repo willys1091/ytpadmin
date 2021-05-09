@@ -27,7 +27,6 @@ class BulletinController extends Controller{
     public function store(Request $request){
         $bulletin = new bulletin();
         $bulletin->img = $request->newid.".".$request->imgext;
-        $bulletin->url = $request->url;
         $bulletin->file = $request->newid.".".$request->docext;
         $bulletin->save();
         storage::disk('public3')->putFileAs('doc/buletin/', asset('media/temp/bulletin/doc/'.$request->docfilename) , $request->newid.'.'.$request->docext);
@@ -52,7 +51,6 @@ class BulletinController extends Controller{
     public function update(Request $request, $id){
         $bulletin = bulletin::findorfail($id);
         $request->userfile <> "" ?$bulletin->img = $request->newid.".".$request->imgext:"";
-        $bulletin->url = $request->url;
         $request->userfile2 <> "" ?$bulletin->file = $request->newid.".".$request->docext:"";
         $bulletin->save();
         if($request->userfile <> ""){
